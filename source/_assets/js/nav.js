@@ -130,7 +130,7 @@ $.when($.ready).then(function() {
   $(document).on('change', '[data-version-switcher]', function (e) {
     e.preventDefault()
     if (e.target.value === "v0") {
-      window.location.assign('https://v0.tailwindcss.com')
+      window.location.assign('https://v0.tailwindcss.co.uk')
     }
   })
 })

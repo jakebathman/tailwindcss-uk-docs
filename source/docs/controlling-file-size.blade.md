@@ -53,7 +53,7 @@ Next, add it as the last plugin in your `postcss.config.js` file:
 // postcss.config.js
 const purgecss = require('@fullhuman/postcss-purgecss')({
 
-  // Specify the paths to all of the template files in your project 
+  // Specify the paths to all of the template files in your project
   content: [
     './src/**/*.html',
     './src/**/*.vue',
@@ -78,7 +78,7 @@ module.exports = {
 
 Note that in this example, **we're only enabling Purgecss in production**. We recommend configuring Purgecss this way because it can be slow to run, and during development it's nice to have every class available so you don't need to wait for a rebuild every time you change some HTML.
 
-Finally, we recommend only applying Purgecss to Tailwind's utility classes, and not to [base styles](https://tailwindcss.com/docs/adding-base-styles) or [component classes](https://tailwindcss.com/docs/extracting-components#extracting-css-components-with-apply). The easiest way to do this is to use Purgecss's [whitelisting](https://github.com/FullHuman/purgecss-docs/blob/master/whitelisting.md) feature to disable Purgecss for non-utility classes:
+Finally, we recommend only applying Purgecss to Tailwind's utility classes, and not to [base styles](https://tailwindcss.co.uk/docs/adding-base-styles) or [component classes](https://tailwindcss.co.uk/docs/extracting-components#extracting-css-components-with-apply). The easiest way to do this is to use Purgecss's [whitelisting](https://github.com/FullHuman/purgecss-docs/blob/master/whitelisting.md) feature to disable Purgecss for non-utility classes:
 
 ```css
 /* purgecss start ignore */
@@ -215,7 +215,7 @@ module.exports = {
 ```
 
 If you need a utility but don't need the responsive versions, set its variants to an empty array to generate 80% fewer classes:
-	
+
 ```js
 module.exports = {
   // ...

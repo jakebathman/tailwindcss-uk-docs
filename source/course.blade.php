@@ -5,13 +5,13 @@
 <meta name="twitter:site" content="@tailwindcss">
 <meta name="twitter:title" content="Designing with Tailwind CSS">
 <meta name="twitter:description" content="{{ $page->description ? $page->description : 'A free video series coming this July.' }}">
-<meta name="twitter:image" content="https://tailwindcss.com/img/course-twitter-card.png">
+<meta name="twitter:image" content="https://tailwindcss.co.uk/img/course-twitter-card.png">
 <meta name="twitter:creator" content="@tailwindcss">
-<meta property="og:url" content="https://tailwindcss.com/" />
+<meta property="og:url" content="https://tailwindcss.co.uk/" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Designing with Tailwind CSS" />
 <meta property="og:description" content="{{ $page->description ? $page->description : 'A free video series coming this July.' }}" />
-<meta property="og:image" content="https://tailwindcss.com/img/course-twitter-card.png" />
+<meta property="og:image" content="https://tailwindcss.co.uk/img/course-twitter-card.png" />
 @endsection
 
 @section('title', 'Designing with Tailwind CSS - A free video series coming this July')

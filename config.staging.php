@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://tailwindcss-next.netlify.com',
+    'baseUrl' => 'https://tailwindcss-uk-next.netlify.com',
     'production' => false,
 ];

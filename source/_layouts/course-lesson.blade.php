@@ -5,13 +5,13 @@
 <meta name="twitter:site" content="@tailwindcss">
 <meta name="twitter:title" content="{{ ($page->title && $page->title !== 'Designing with Tailwind CSS') ? $page->title . ' - Designing with Tailwind CSS' : 'Designing with Tailwind CSS' }}">
 <meta name="twitter:description" content="{{ $page->description ? $page->description : 'A free video series on building beautiful UIs with Tailwind CSS.' }}">
-<meta name="twitter:image" content="https://tailwindcss.com/img/course-twitter-card.png">
+<meta name="twitter:image" content="https://tailwindcss.co.uk/img/course-twitter-card.png">
 <meta name="twitter:creator" content="@tailwindcss">
-<meta property="og:url" content="https://tailwindcss.com/" />
+<meta property="og:url" content="https://tailwindcss.co.uk/" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ $page->title ? $page->title . ' - Designing with Tailwind CSS' : 'Designing with Tailwind CSS' }}" />
 <meta property="og:description" content="{{ $page->description ? $page->description : 'A free video series on building beautiful UIs with Tailwind CSS.' }}" />
-<meta property="og:image" content="https://tailwindcss.com/img/course-twitter-card.png" />
+<meta property="og:image" content="https://tailwindcss.co.uk/img/course-twitter-card.png" />
 @endsection
 
 @push('scripts')

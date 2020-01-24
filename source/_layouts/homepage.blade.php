@@ -5,13 +5,13 @@
 <meta name="twitter:site" content="@tailwindcss">
 <meta name="twitter:title" content="Tailwind CSS - A utility-first CSS framework for rapidly building custom designs">
 <meta name="twitter:description" content="{{ $page->description ? $page->description : 'Documentation for the Tailwind CSS framework.' }}">
-<meta name="twitter:image" content="https://tailwindcss.com/img/twitter-large-card.png">
+<meta name="twitter:image" content="https://tailwindcss.co.uk/img/twitter-large-card.png">
 <meta name="twitter:creator" content="@tailwindcss">
-<meta property="og:url" content="https://tailwindcss.com/" />
+<meta property="og:url" content="https://tailwindcss.co.uk/" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Tailwind CSS - A utility-first CSS framework for rapidly building custom designs" />
 <meta property="og:description" content="{{ $page->description ? $page->description : 'Documentation for the Tailwind CSS framework.' }}" />
-<meta property="og:image" content="https://tailwindcss.com/img/twitter-large-card.png" />
+<meta property="og:image" content="https://tailwindcss.co.uk/img/twitter-large-card.png" />
 @endsection
 
 @section('title', 'Tailwind CSS - A Utility-First CSS Framework for Rapidly Building Custom Designs')
