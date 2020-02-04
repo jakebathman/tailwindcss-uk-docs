@@ -7,7 +7,7 @@ titleBorder: true
 
 <h2 style="font-size: 0" class="invisible m-0 -mb-6">Overview</h2>
 
-Built on top of [normalize.css](https://github.com/necolas/normalize.css/), Preflight is a set of base styles for Tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you work within the constraints of your design system.
+Built on top of [normalise.css](https://github.com/necolas/normalise.css/), Preflight is a set of base styles for Tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you work within the constraints of your design system.
 
 Tailwind automatically injects these styles when you include `@@tailwind base` in your CSS:
 
@@ -141,11 +141,11 @@ In order to make it easy to add a border by simply adding the `border` class, Ta
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: theme('borderColor.default', currentColor);
+  border-colour: theme('borderColor.default', currentColor);
 }
 ```
 
-Since the `border` class only sets the `border-width` property, this reset ensures that adding that class always adds a solid 1px border using your configured default border color.
+Since the `border` class only sets the `border-width` property, this reset ensures that adding that class always adds a solid 1px border using your configured default border colour.
 
 This can cause some unexpected results when integrating certain third-party libraries, like [Google maps](https://github.com/tailwindcss/tailwindcss/issues/484) for example.
 
@@ -192,6 +192,6 @@ Learn more in the [adding base styles documentation](/docs/adding-base-styles).
 
 If you'd like to completely disable Preflight — perhaps because you're integrating Tailwind into an existing project or because you'd like to provide your own base styles — all you need to do is set `preflight` to `false` in the `corePlugins` section of your `tailwind.config.js` file:
 
-@component('_partials.customized-config', ['key' => 'corePlugins'])
+@component('_partials.customised-config', ['key' => 'corePlugins'])
 + preflight: false,
 @endcomponent

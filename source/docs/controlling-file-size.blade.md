@@ -37,11 +37,11 @@ When using Purgecss with Tailwind, it's very hard to end up with more than 10kb 
 
 In the future we may incorporate Purgecss directly into Tailwind, but for now the best way to use it in your project is as a PostCSS plugin.
 
-To get started with Purgecss, first install `@fullhuman/postcss-purgecss`:
+To get started with Purgecss, first instal `@fullhuman/postcss-purgecss`:
 
 ```bash
 # Using npm
-npm install @fullhuman/postcss-purgecss --save-dev
+npm instal @fullhuman/postcss-purgecss --save-dev
 
 # Using yarn
 yarn add @fullhuman/postcss-purgecss -D
@@ -147,7 +147,7 @@ It's important to note that because of the negative lookbehind in this regex, it
 
 If you're using any other special characters in your class names, make sure to update the regular expression to include those as well.
 
-For example, if you have customized Tailwind to create classes like `w-50%`, you'll want to add `%` to the regular expression:
+For example, if you have customised Tailwind to create classes like `w-50%`, you'll want to add `%` to the regular expression:
 
 ```diff
 - /[\w-/:]+(?<!:)/g
@@ -161,23 +161,23 @@ For example, if you have customized Tailwind to create classes like `w-50%`, you
 
 If you can't use Purgecss for one reason or another, you can also reduce Tailwind's footprint by removing unused values from [your configuration file](/docs/configuration).
 
-The default theme provides a very generous set of colors, breakpoints, sizes, margins, etc. to make sure that when you pull Tailwind down to prototype something, create a CodePen demo, or just try out the workflow, the experience is as enjoyable and fluid as possible.
+The default theme provides a very generous set of colours, breakpoints, sizes, margins, etc. to make sure that when you pull Tailwind down to prototype something, create a CodePen demo, or just try out the workflow, the experience is as enjoyable and fluid as possible.
 
-We don't want you to have to go and write new CSS because we didn't provide enough padding helpers out of the box, or because you wanted to use an orange color scheme for your demo and we only gave you blue.
+We don't want you to have to go and write new CSS because we didn't provide enough padding helpers out of the box, or because you wanted to use an orange colour scheme for your demo and we only gave you blue.
 
 This comes with a trade-off though: the default build is significantly heavier than it would be on a project with a purpose-built configuration file.
 
 Here are a few strategies you can use to keep your generated CSS small and performant.
 
-### Limiting your color palette
+### Limiting your colour palette
 
-The default theme includes a whopping [93 colors](/docs/colors) used for backgrounds, borders, text, and placeholders, all of which also have `hover:` and `focus` variants, as well as responsive variants at the five default screen sizes.
+The default theme includes a whopping [93 colours](/docs/colours) used for backgrounds, borders, text, and placeholders, all of which also have `hover:` and `focus` variants, as well as responsive variants at the five default screen sizes.
 
-This means that by default, there are 5580 classes generated from this color palette out of 12,230 classes total in the entire default build.
+This means that by default, there are 5580 classes generated from this colour palette out of 12,230 classes total in the entire default build.
 
-Very few projects actually need this many colors, and removing colors you don't need can have a huge impact on the overall file size.
+Very few projects actually need this many colours, and removing colours you don't need can have a huge impact on the overall file size.
 
-Here's how using a smaller color palette affects the final size:
+Here's how using a smaller colour palette affects the final size:
 
 | Colors         | Original | Minified |   Gzip | Brotli |
 | -------------- | -------: | -------: | -----: | -----: |
@@ -198,7 +198,7 @@ Here's how defining fewer screens affects the output:
 | 2             |  464.6kb │ 359.4kb  │ 47.4kb │ 19.2kb |
 | 1             |  305.1kb │ 237.5kb  │ 32.1kb │ 17.6kb |
 
-If you only need 3 screen sizes and 35 colors, you're down to 39.5kb after gzip _(14.6kb after Brotli!)_ without changing anything else.
+If you only need 3 screen sizes and 35 colours, you're down to 39.5kb after gzip _(14.6kb after Brotli!)_ without changing anything else.
 
 ### Disabling unused utilities and variants
 
@@ -225,5 +225,5 @@ module.exports = {
 }
 ```
 
-These are mostly small wins compared to limiting your color palette or using fewer breakpoints, but they can still add up.
+These are mostly small wins compared to limiting your colour palette or using fewer breakpoints, but they can still add up.
 

@@ -47,11 +47,11 @@ For the latest information about which CSS features are supported by which brows
 
 Tailwind doesn't automatically add vendor prefixes to any of its styles. Instead, we recommend that you use [Autoprefixer](https://github.com/postcss/autoprefixer).
 
-To use it, install it via npm:
+To use it, instal it via npm:
 
 ```bash
 # Using npm
-npm install autoprefixer
+npm instal autoprefixer
 
 # Using Yarn
 yarn add autoprefixer

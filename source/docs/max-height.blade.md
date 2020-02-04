@@ -30,8 +30,8 @@ features:
 Set the maximum height of an element using the `max-h-full` or `max-h-screen` utilities.
 
 @component('_partials.code-sample')
-<div class="h-24 p-6 bg-gray-300">
-  <div class="h-48 max-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-24 p-6 bg-grey-300">
+  <div class="h-48 max-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>max-h-full</span>
   </div>
 </div>
@@ -54,36 +54,36 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="h-24 p-6 bg-gray-300">
-  <div class="h-48 max-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-24 p-6 bg-grey-300">
+  <div class="h-48 max-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('sm')
-<div class="h-24 p-6 bg-gray-300">
-  <div class="h-48 max-h-screen p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-24 p-6 bg-grey-300">
+  <div class="h-48 max-h-screen p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('md')
-<div class="h-24 p-6 bg-gray-300">
-  <div class="h-48 max-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-24 p-6 bg-grey-300">
+  <div class="h-48 max-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('lg')
-<div class="h-24 p-6 bg-gray-300">
-  <div class="h-48 max-h-screen p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-24 p-6 bg-grey-300">
+  <div class="h-48 max-h-screen p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('xl')
-<div class="h-24 p-6 bg-gray-300">
-  <div class="h-48 max-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-24 p-6 bg-grey-300">
+  <div class="h-48 max-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
@@ -105,7 +105,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 Customize Tailwind's default max-height scale in the `theme.maxHeight` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.maxHeight'])
+@component('_partials.customised-config', ['key' => 'theme.maxHeight'])
 + '0': '0',
 + '1/4': '25%',
 + '1/2': '50%',
@@ -113,7 +113,7 @@ Customize Tailwind's default max-height scale in the `theme.maxHeight` section o
 + 'full': '100%',
 @endcomponent
 
-Learn more about customizing the default theme in the [theme customization documentation](/docs/theme#customizing-the-default-theme).
+Learn more about customising the default theme in the [theme customization documentation](/docs/theme#customising-the-default-theme).
 
 @include('_partials.variants-and-disabling', [
     'utility' => [

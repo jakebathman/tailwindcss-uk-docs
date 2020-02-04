@@ -70,7 +70,7 @@ description: "Utilities for setting the maximum width of an element"
 Set the maximum width of an element using the `max-w-{size}` utilities.
 
 @component('_partials.code-sample')
-<div class="max-w-md mx-auto text-center p-6 bg-gray-300">
+<div class="max-w-md mx-auto text-centre p-6 bg-grey-300">
   max-w-md
 </div>
 @slot('code')
@@ -90,27 +90,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="max-w-sm mx-auto text-center p-6 bg-gray-300">
+<div class="max-w-sm mx-auto text-centre p-6 bg-grey-300">
   Target
 </div>
 @endslot
 @slot('sm')
-<div class="max-w-md mx-auto text-center p-6 bg-gray-300">
+<div class="max-w-md mx-auto text-centre p-6 bg-grey-300">
   Target
 </div>
 @endslot
 @slot('md')
-<div class="max-w-lg mx-auto text-center p-6 bg-gray-300">
+<div class="max-w-lg mx-auto text-centre p-6 bg-grey-300">
   Target
 </div>
 @endslot
 @slot('lg')
-<div class="max-w-xl mx-auto text-center p-6 bg-gray-300">
+<div class="max-w-xl mx-auto text-centre p-6 bg-grey-300">
   Target
 </div>
 @endslot
 @slot('xl')
-<div class="max-w-2xl mx-auto text-center p-6 bg-gray-300">
+<div class="max-w-2xl mx-auto text-centre p-6 bg-grey-300">
   Target
 </div>
 @endslot
@@ -129,13 +129,13 @@ For more information about Tailwind's responsive design features, check out the 
 
 Customize Tailwind's default max-width scale in the `theme.maxWidth` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.maxWidth'])
+@component('_partials.customised-config', ['key' => 'theme.maxWidth'])
 + '1/4': '25%',
 + '1/2': '50%',
 + '3/4': '75%',
 @endcomponent
 
-Learn more about customizing the default theme in the [theme customization documentation](/docs/theme#customizing-the-default-theme).
+Learn more about customising the default theme in the [theme customization documentation](/docs/theme#customising-the-default-theme).
 
 @include('_partials.variants-and-disabling', [
     'utility' => [

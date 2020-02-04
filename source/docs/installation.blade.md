@@ -7,16 +7,16 @@ titleBorder: true
 
 <div class="heading mt-0">
   <h2 class="flex markdown mt-0">
-    <span class="text-lg bg-gray-200 text-gray-700 h-6 w-6 rounded-full inline-flex justify-center items-center mt-px mr-3">1</span>
+    <span class="text-lg bg-grey-200 text-grey-700 h-6 w-6 rounded-full inline-flex justify-centre items-centre mt-px mr-3">1</span>
     Install Tailwind via npm
   </h2>
 </div>
 
-For most projects (and to take advantage of Tailwind's customization features), you'll want to install Tailwind via npm.
+For most projects (and to take advantage of Tailwind's customization features), you'll want to instal Tailwind via npm.
 
 ```bash
 # Using npm
-npm install tailwindcss
+npm instal tailwindcss
 
 # Using Yarn
 yarn add tailwindcss
@@ -24,7 +24,7 @@ yarn add tailwindcss
 
 <div class="heading mt-0">
   <h2 class="flex markdown">
-    <span class="text-lg bg-gray-200 text-gray-700 h-6 w-6 rounded-full inline-flex justify-center items-center mt-px mr-3">2</span>
+    <span class="text-lg bg-grey-200 text-grey-700 h-6 w-6 rounded-full inline-flex justify-centre items-centre mt-px mr-3">2</span>
     Add Tailwind to your CSS
   </h2>
 </div>
@@ -53,12 +53,12 @@ If you're using `postcss-import` (or a tool that uses it under the hood, such as
 
 <div class="heading mt-0">
   <h2 class="flex markdown">
-    <span class="text-lg bg-gray-200 text-gray-700 h-6 w-6 rounded-full inline-flex justify-center items-center mt-px mr-3">3</span>
-    <span data-heading-text class="mt-0">Create your Tailwind config file <span class="text-gray-600">(optional)</span></span>
+    <span class="text-lg bg-grey-200 text-grey-700 h-6 w-6 rounded-full inline-flex justify-centre items-centre mt-px mr-3">3</span>
+    <span data-heading-text class="mt-0">Create your Tailwind config file <span class="text-grey-600">(optional)</span></span>
   </h2>
 </div>
 
-If you'd like to customize your Tailwind installation, you can generate a config file for your project using the Tailwind CLI utility included when you install the `tailwindcss` npm package:
+If you'd like to customise your Tailwind installation, you can generate a config file for your project using the Tailwind CLI utility included when you instal the `tailwindcss` npm package:
 
 ```bash
 npx tailwind init
@@ -79,7 +79,7 @@ Learn more about configuration Tailwind in the [configuration documentation](/do
 
 <div class="heading mt-0">
   <h2 class="flex markdown">
-    <span class="text-lg bg-gray-200 text-gray-700 h-6 w-6 rounded-full inline-flex justify-center items-center mt-px mr-3">4</span>
+    <span class="text-lg bg-grey-200 text-grey-700 h-6 w-6 rounded-full inline-flex justify-centre items-centre mt-px mr-3">4</span>
     Process your CSS with Tailwind
   </h2>
 </div>
@@ -310,25 +310,25 @@ module.exports = function(defaults) {
 Before using the CDN build please note, many of the features that make Tailwind CSS great are not available without incorporating Tailwind into your build process.
 
 <ul class="list-none pl-0">
-  <li class="flex items-center">
+  <li class="flex items-centre">
     <svg class="h-6 w-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle"><circle cx="12" cy="12" r="10" fill="#fed7d7"/><path fill="#f56565" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/></svg>
-    <span>You can't customize Tailwind's default theme</span>
+    <span>You can't customise Tailwind's default theme</span>
   </li>
-  <li class="flex items-center">
+  <li class="flex items-centre">
     <svg class="h-6 w-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle"><circle cx="12" cy="12" r="10" fill="#fed7d7"/><path fill="#f56565" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/></svg>
     <span>You can't use any <a href="/docs/functions-and-directives">directives</a> like <code>@apply</code>, <code>@variants</code>, etc.</span>
   </li>
-  <li class="flex items-center">
+  <li class="flex items-centre">
     <svg class="h-6 w-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle"><circle cx="12" cy="12" r="10" fill="#fed7d7"/><path fill="#f56565" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/></svg>
     <span>You can't enable features like <a href="/docs/pseudo-class-variants#group-hover"><code>group-hover</code></a></span>
   </li>
-  <li class="flex items-center">
+  <li class="flex items-centre">
     <svg class="h-6 w-6 mr-2 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-close-circle"><circle cx="12" cy="12" r="10" fill="#fed7d7"/><path fill="#f56565" d="M13.41 12l2.83 2.83a1 1 0 0 1-1.41 1.41L12 13.41l-2.83 2.83a1 1 0 1 1-1.41-1.41L10.59 12 7.76 9.17a1 1 0 0 1 1.41-1.41L12 10.59l2.83-2.83a1 1 0 0 1 1.41 1.41L13.41 12z"/></svg>
-    <span>You can't install third-party plugins</span>
+    <span>You can't instal third-party plugins</span>
   </li>
 </ul>
 
-To get the most out of Tailwind, you really should [install it via npm](#1-install-tailwind-via-npm).
+To get the most out of Tailwind, you really should [instal it via npm](#1-instal-tailwind-via-npm).
 
 To pull in Tailwind for quick demos or just giving the framework a spin, grab the latest default configuration build via CDN:
 
@@ -338,4 +338,4 @@ To pull in Tailwind for quick demos or just giving the framework a spin, grab th
 
 Note that while the CDN build is large *(27kb compressed, 348kb raw)*, **it's not representative of the sizes you see when including Tailwind as part of your build process**.
 
-Sites that follow our [best practices](/docs/controlling-file-size) are almost always under 10kb compressed. For example, [Firefox Send](https://send.firefox.com/) is built with Tailwind and their CSS is under 4kb compressed and minified.
+Sites that follow our [best practises](/docs/controlling-file-size) are almost always under 10kb compressed. For example, [Firefox Send](https://send.firefox.com/) is built with Tailwind and their CSS is under 4kb compressed and minified.

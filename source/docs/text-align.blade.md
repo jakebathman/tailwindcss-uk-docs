@@ -17,9 +17,9 @@ features:
       'Align text to the left.',
     ],
     [
-      '.text-center',
-      'text-align: center;',
-      'Align text to the center.',
+      '.text-centre',
+      'text-align: centre;',
+      'Align text to the centre.',
     ],
     [
       '.text-right',
@@ -36,28 +36,28 @@ features:
 
 ## Usage
 
-Control the text alignment of an element using the `.text-left`, `.text-center`, `.text-right`, and `.text-justify` utilities.
+Control the text alignment of an element using the `.text-left`, `.text-centre`, `.text-right`, and `.text-justify` utilities.
 
 @component('_partials.code-sample')
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.text-left</p>
-  <p class="text-left text-base text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
+  <p class="text-sm text-grey-600">.text-left</p>
+  <p class="text-left text-base text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.text-center</p>
-  <p class="text-center text-base text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
+  <p class="text-sm text-grey-600">.text-centre</p>
+  <p class="text-centre text-base text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.text-right</p>
-  <p class="text-right text-base text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
+  <p class="text-sm text-grey-600">.text-right</p>
+  <p class="text-right text-base text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.text-justify</p>
-  <p class="text-justify text-base text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
+  <p class="text-sm text-grey-600">.text-justify</p>
+  <p class="text-justify text-base text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis fugit, enim molestiae praesentium eveniet, recusandae et error beatae facilis ex harum consequuntur, quia pariatur non. Doloribus illo, ullam blanditiis ab.</p>
 </div>
 @slot('code')
 <p class="text-left ...">Lorem ipsum dolor sit amet ...</p>
-<p class="text-center ...">Lorem ipsum dolor sit amet ...</p>
+<p class="text-centre ...">Lorem ipsum dolor sit amet ...</p>
 <p class="text-right ...">Lorem ipsum dolor sit amet ...</p>
 <p class="text-justify ...">Lorem ipsum dolor sit amet ...</p>
 @endslot
@@ -65,28 +65,28 @@ Control the text alignment of an element using the `.text-left`, `.text-center`,
 
 ## Responsive
 
-To control the text alignment of an element at a specific breakpoint, add a `{screen}:` prefix to any existing text alignment utility. For example, use `md:text-center` to apply the `text-center` utility at only medium screen sizes and above.
+To control the text alignment of an element at a specific breakpoint, add a `{screen}:` prefix to any existing text alignment utility. For example, use `md:text-centre` to apply the `text-centre` utility at only medium screen sizes and above.
 
 For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="text-left text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="text-left text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('sm')
-<p class="text-center text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="text-centre text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('md')
-<p class="text-right text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="text-right text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('lg')
-<p class="text-justify text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="text-justify text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('xl')
-<p class="text-center text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="text-centre text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('code')
-<p class="none:text-left sm:text-center md:text-right lg:text-justify xl:text-center ...">Lorem ipsum dolor sit amet ...</p>
+<p class="none:text-left sm:text-centre md:text-right lg:text-justify xl:text-centre ...">Lorem ipsum dolor sit amet ...</p>
 @endslot
 @endcomponent
 

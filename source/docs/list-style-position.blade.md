@@ -28,8 +28,8 @@ Control the position of the markers in a list using the `list-inside` and `list-
 
 @component('_partials.code-sample', ['class' => 'px-8'])
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.list-inside</p>
-  <ul class="list-disc list-inside bg-gray-200 text-gray-800 py-2">
+  <p class="text-sm text-grey-600">.list-inside</p>
+  <ul class="list-disc list-inside bg-grey-200 text-grey-800 py-2">
     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
     <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
     <li>Quidem, ipsam illum quis sed voluptatum quae eum fugit earum</li>
@@ -37,20 +37,20 @@ Control the position of the markers in a list using the `list-inside` and `list-
 </p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.list-outside</p>
-  <ul class="list-disc list-outside bg-gray-200 text-gray-800 py-2">
+  <p class="text-sm text-grey-600">.list-outside</p>
+  <ul class="list-disc list-outside bg-grey-200 text-grey-800 py-2">
     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
     <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
     <li>Quidem, ipsam illum quis sed voluptatum quae eum fugit earum</li>
   </ul>
 </div>
 @slot('code')
-<ul class="list-inside bg-gray-200 ...">
+<ul class="list-inside bg-grey-200 ...">
   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
   ...
 </ul>
 
-<ul class="list-outside bg-gray-200 ...">
+<ul class="list-outside bg-grey-200 ...">
   <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
   ...
 </ul>

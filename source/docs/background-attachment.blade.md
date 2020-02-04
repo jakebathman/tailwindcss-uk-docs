@@ -34,7 +34,7 @@ features:
 Use `.bg-fixed` to fix the background image relative to the viewport.
 
 @component('_partials.code-sample')
-<div class="w-full h-48 bg-fixed bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-fixed bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @slot('code')
@@ -47,7 +47,7 @@ Use `.bg-fixed` to fix the background image relative to the viewport.
 Use `.bg-local` to scroll the background image with the container and the viewport.
 
 @component('_partials.code-sample')
-<div class="w-full h-48 bg-local bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-local bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @slot('code')
@@ -60,7 +60,7 @@ Use `.bg-local` to scroll the background image with the container and the viewpo
 Use `.bg-scroll` to scroll the background image with the viewport, but not with the container.
 
 @component('_partials.code-sample')
-<div class="w-full h-48 bg-scroll bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-scroll bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @slot('code')
@@ -76,27 +76,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="w-full h-48 bg-fixed bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-fixed bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @endslot
 @slot('sm')
-<div class="w-full h-48 bg-local bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-local bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @endslot
 @slot('md')
-<div class="w-full h-48 bg-scroll bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-scroll bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @endslot
 @slot('lg')
-<div class="w-full h-48 bg-local bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-local bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @endslot
 @slot('xl')
-<div class="w-full h-48 bg-fixed bg-center overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full h-48 bg-fixed bg-centre overflow-y-scroll" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
     <div class="h-64"></div>
 </div>
 @endslot

@@ -26,15 +26,15 @@ For a fairly comprehensive list of available PostCSS plugins see the [PostCSS Gi
 
 ### Build-time imports
 
-One of the most useful features preprocessors offer is the ability to organize your CSS into multiple files and combine them at build time by processing `@import` statements in advance, instead of in the browser.
+One of the most useful features preprocessors offer is the ability to organise your CSS into multiple files and combine them at build time by processing `@import` statements in advance, instead of in the browser.
 
 The canonical plugin for handling this with PostCSS is [postcss-import](https://github.com/postcss/postcss-import).
 
-To use it, install the plugin via npm:
+To use it, instal the plugin via npm:
 
 ```bash
 # npm
-npm install postcss-import
+npm instal postcss-import
 
 # yarn
 yarn add postcss-import
@@ -63,7 +63,7 @@ Won't work, `@@import` statements must come first
 /* components.css */
 
 .btn {
-  @@apply px-4 py-2 rounded font-semibold bg-gray-200 text-black;
+  @@apply px-4 py-2 rounded font-semibold bg-grey-200 text-black;
 }
 
 /* Will not work */
@@ -85,7 +85,7 @@ Use separate files for imports and actual CSS
 ```css
 /* components/buttons.css */
 .btn {
-  @@apply px-4 py-2 rounded font-semibold bg-gray-200 text-black;
+  @@apply px-4 py-2 rounded font-semibold bg-grey-200 text-black;
 }
 ```
 
@@ -138,13 +138,13 @@ To add support for nested declarations, you have two options:
 
 - [postcss-nested](https://github.com/postcss/postcss-nested), which uses a syntax much like Sass.
 
-- [postcss-nesting](https://github.com/jonathantneal/postcss-nesting), which follows the [CSS Nesting](https://drafts.csswg.org/css-nesting-1/) specification that will hopefully be available directly in the browser in the future.
+- [postcss-nesting](https://github.com/jonathantneal/postcss-nesting), which follows the [CSS Nesting](https://draughts.csswg.org/css-nesting-1/) specification that will hopefully be available directly in the browser in the future.
 
-To use either of these plugins, install them via npm:
+To use either of these plugins, instal them via npm:
 
 ```bash
 # npm
-npm install postcss-nested  # or postcss-nesting
+npm instal postcss-nested  # or postcss-nesting
 
 # yarn
 yarn add postcss-nested  # or postcss-nesting
@@ -170,11 +170,11 @@ These days CSS variables (officially known as custom properties) have really goo
 
 However if you need to support IE11, you can use the [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) plugin to automatically create fallbacks for your variables.
 
-To use it, install it via npm:
+To use it, instal it via npm:
 
 ```bash
 # npm
-npm install postcss-custom-properties
+npm instal postcss-custom-properties
 
 # yarn
 yarn add postcss-custom-properties
@@ -199,11 +199,11 @@ module.exports = {
 
 You can add support for dozens of upcoming CSS features to your project using the [postcss-preset-env](https://github.com/csstools/postcss-preset-env) plugin.
 
-To use it, install it via npm:
+To use it, instal it via npm:
 
 ```bash
 # npm
-npm install postcss-preset-env
+npm instal postcss-preset-env
 
 # yarn
 yarn add postcss-preset-env
@@ -232,7 +232,7 @@ To use Tailwind with a preprocessing tool like Sass, Less, or Stylus, you'll nee
 
 The exact instructions will be different depending on which build tool you are using, so see our [installation documentation](/docs/installation#3-process-your-css-with-tailwind) to learn more about integrating Tailwind into your existing build process.
 
-The most important thing to understand about using Tailwind with a preprocessor is that **preprocessors like Sass, Less, and Stylus run separately, before Tailwind**. This means that you can't feed output from Tailwind's `theme()` function into a Sass color function for example, because the `theme()` function isn't actually evaluated until your Sass has been compiled to CSS and fed into PostCSS.
+The most important thing to understand about using Tailwind with a preprocessor is that **preprocessors like Sass, Less, and Stylus run separately, before Tailwind**. This means that you can't feed output from Tailwind's `theme()` function into a Sass colour function for example, because the `theme()` function isn't actually evaluated until your Sass has been compiled to CSS and fed into PostCSS.
 
 @component('_partials.tip-bad')
 Won't work, Sass is processed first
@@ -240,7 +240,7 @@ Won't work, Sass is processed first
 
 ```css
 .alert {
-  background-color: darken(theme('colors.red.500'), 10%);
+  background-colour: darken(theme('colours.red.500'), 10%);
 }
 ```
 
@@ -358,7 +358,7 @@ Use theme() instead of @@apply
 ```css
 .card {
   border-radius: theme('borderRadius.lg');
-  background-color: theme('colors.white');
+  background-colour: theme('colours.white');
   padding: theme('spacing.4');
 }
 ```

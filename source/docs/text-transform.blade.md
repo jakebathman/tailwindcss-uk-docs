@@ -22,8 +22,8 @@ features:
       'Makes all text lowercase within an element.',
     ],
     [
-      '.capitalize',
-      'text-transform: capitalize;',
+      '.capitalise',
+      'text-transform: capitalise;',
       'Capitalizes the text within an element.',
     ],
     [
@@ -39,7 +39,7 @@ features:
 Use the `.normal-case` utility to preserve the original casing. This is typically used to reset capitalization at different breakpoints.
 
 @component('_partials.code-sample')
-<p class="normal-case text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="normal-case text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="normal-case ...">The quick brown fox ...</p>
 @endslot
@@ -50,7 +50,7 @@ Use the `.normal-case` utility to preserve the original casing. This is typicall
 Use the `.uppercase` utility to uppercase text.
 
 @component('_partials.code-sample')
-<p class="uppercase text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="uppercase text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="uppercase ...">The quick brown fox ...</p>
 @endslot
@@ -61,7 +61,7 @@ Use the `.uppercase` utility to uppercase text.
 Use the `.lowercase` utility to lowercase text.
 
 @component('_partials.code-sample')
-<p class="lowercase text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="lowercase text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="lowercase ...">The quick brown fox ...</p>
 @endslot
@@ -69,12 +69,12 @@ Use the `.lowercase` utility to lowercase text.
 
 ## Capitalize
 
-Use the `.capitalize` utility to capitalize text.
+Use the `.capitalise` utility to capitalise text.
 
 @component('_partials.code-sample')
-<p class="capitalize text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="capitalise text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
-<p class="capitalize ...">The quick brown fox ...</p>
+<p class="capitalise ...">The quick brown fox ...</p>
 @endslot
 @endcomponent
 
@@ -86,22 +86,22 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="uppercase text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="uppercase text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('sm')
-<p class="lowercase text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="lowercase text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('md')
-<p class="capitalize text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="capitalise text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('lg')
-<p class="normal-case text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="normal-case text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('xl')
-<p class="uppercase text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="uppercase text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('code')
-<p class="none:uppercase sm:lowercase md:capitalize lg:normal-case xl:uppercase ...">
+<p class="none:uppercase sm:lowercase md:capitalise lg:normal-case xl:uppercase ...">
   The quick brown fox jumped over the lazy dog.
 </p>
 @endslot

@@ -20,7 +20,7 @@ Use `.outline-none` to remove browser specific outlining of focused elements.
 
 It is highly recommended to apply your own focus styling for accessibility when using this utility.
 
-@component('_partials.code-sample', ['class' => 'text-center bg-gray-200'])
+@component('_partials.code-sample', ['class' => 'text-centre bg-grey-200'])
 <input type="text" class="px-2 m-2" placeholder="Focus me" />
 <input type="text" class="px-2 m-2 outline-none" placeholder="Focus me (no outline)" />
 <input type="text" class="px-2 m-2 outline-none focus:shadow-outline focus:bg-blue-100" placeholder="Focus me (custom)" />

@@ -34,10 +34,10 @@ features:
 Use `.bg-auto` to display the background image at its default size.
 
 @component('_partials.code-sample')
-<div class="w-full bg-gray-400 h-48 bg-center bg-auto" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-auto" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @slot('code')
-<div class="bg-auto bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-auto bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -46,10 +46,10 @@ Use `.bg-auto` to display the background image at its default size.
 Use `.bg-cover` to scale the background image until it fills the background layer.
 
 @component('_partials.code-sample')
-<div class="w-full mx-auto bg-gray-400 h-48 bg-center bg-cover" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full mx-auto bg-grey-400 h-48 bg-centre bg-cover" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @slot('code')
-<div class="bg-cover bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-cover bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -58,10 +58,10 @@ Use `.bg-cover` to scale the background image until it fills the background laye
 Use `.bg-contain` to scale the background image to the outer edges without cropping or stretching.
 
 @component('_partials.code-sample')
-<div class="w-full bg-gray-400 h-48 bg-center bg-no-repeat bg-contain" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-no-repeat bg-contain" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @slot('code')
-<div class="bg-contain bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-contain bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -73,27 +73,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="mx-auto w-64 bg-gray-400 h-48 bg-center bg-no-repeat bg-auto" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="mx-auto w-64 bg-grey-400 h-48 bg-centre bg-no-repeat bg-auto" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @endslot
 
 @slot('sm')
-<div class="mx-auto w-64 bg-gray-400 h-48 bg-center bg-no-repeat bg-cover" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="mx-auto w-64 bg-grey-400 h-48 bg-centre bg-no-repeat bg-cover" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @endslot
 
 @slot('md')
-<div class="mx-auto w-64 bg-gray-400 h-48 bg-center bg-no-repeat bg-contain" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="mx-auto w-64 bg-grey-400 h-48 bg-centre bg-no-repeat bg-contain" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @endslot
 
 @slot('lg')
-<div class="mx-auto w-64 bg-gray-400 h-48 bg-center bg-no-repeat bg-auto" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="mx-auto w-64 bg-grey-400 h-48 bg-centre bg-no-repeat bg-auto" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @endslot
 
 @slot('xl')
-<div class="mx-auto w-64 bg-gray-400 h-48 bg-center bg-no-repeat bg-cover" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
+<div class="mx-auto w-64 bg-grey-400 h-48 bg-centre bg-no-repeat bg-cover" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');">
 </div>
 @endslot
 
@@ -106,7 +106,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides utilities for `auto`, `cover`, and `contain` background sizes. You can change, add, or remove these by editing the `theme.backgroundSize` section of your config.
 
-@component('_partials.customized-config', ['key' => 'theme.backgroundSize'])
+@component('_partials.customised-config', ['key' => 'theme.backgroundSize'])
   'auto': 'auto',
   'cover': 'cover',
   'contain': 'contain',

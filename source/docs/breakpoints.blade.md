@@ -7,7 +7,7 @@ titleBorder: true
 
 <h2 style="font-size: 0" class="invisible m-0 -mb-6">Basic customization</h2>
 
-You define your project's breakpoints in the `theme.screens` section of your `tailwind.config.js` file. The keys are your screen names (used as the prefix for the responsive utility variants Tailwind generates, like `md:text-center`), and the values are the `min-width` where that breakpoint should start.
+You define your project's breakpoints in the `theme.screens` section of your `tailwind.config.js` file. The keys are your screen names (used as the prefix for the responsive utility variants Tailwind generates, like `md:text-centre`), and the values are the `min-width` where that breakpoint should start.
 
 The default breakpoints are inspired by common device resolutions:
 
@@ -54,21 +54,21 @@ module.exports = {
 }
 ```
 
-These screen names will be reflected in your utilities, so your `text-center` utilities would now look like this:
+These screen names will be reflected in your utilities, so your `text-centre` utilities would now look like this:
 
 ```css
-.text-center { text-align: center }
+.text-centre { text-align: centre }
 
 @media (min-width: 640px) {
-  .tablet\:text-center { text-align: center }
+  .tablet\:text-centre { text-align: centre }
 }
 
 @media (min-width: 1024px) {
-  .laptop\:text-center { text-align: center }
+  .laptop\:text-centre { text-align: centre }
 }
 
 @media (min-width: 1280px) {
-  .desktop\:text-center { text-align: center }
+  .desktop\:text-centre { text-align: centre }
 }
 ```
 
@@ -180,7 +180,7 @@ module.exports = {
 Then you can use classes like `print:text-black` to specify styles that should only be applied when someone tries to print the page you're working on:
 
 ```html
-<div class="text-gray-700 print:text-black">
+<div class="text-grey-700 print:text-black">
   <!-- ... -->
 </div>
 ```

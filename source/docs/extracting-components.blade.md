@@ -15,15 +15,15 @@ Tailwind encourages a [utility-first](/docs/utility-first) workflow, where desig
   </div>
   <div class="mt-4 md:mt-0 md:ml-6">
     <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
-    <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a>
-    <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+    <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-grey-900 hover:underline">Finding customers for your new business</a>
+    <p class="mt-2 text-grey-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
   </div>
 </div>
 @endcomponent
 
 But as a project grows, you'll inevitably find yourself repeating common utility combinations to recreate the same component in many different places. This is most apparent with small components, like buttons, form elements, badges, etc.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   Button
 </button>
@@ -53,11 +53,11 @@ Don't rely on CSS classes to extract complex components
   <img class="rounded" src="https://images.unsplash.com/photo-1452784444945-3f422708fe5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=512&q=80" alt="Beach">
   <div class="mt-2">
     <div>
-      <div class="text-xs text-gray-600 uppercase font-bold">Private Villa</div>
-      <div class="font-bold text-gray-700 leading-snug">
+      <div class="text-xs text-grey-600 uppercase font-bold">Private Villa</div>
+      <div class="font-bold text-grey-700 leading-snug">
         <a href="#" class="hover:underline">Relaxing All-Inclusive Resort in Cancun</a>
       </div>
-      <div class="mt-2 text-sm text-gray-600">$299 USD per night</div>
+      <div class="mt-2 text-sm text-grey-600">$299 USD per night</div>
     </div>
   </div>
 </div>
@@ -113,11 +113,11 @@ $code = <<<EOF
     <img class="rounded" :src="img" :alt="imgAlt">
     <div class="mt-2">
       <div>
-        <div class="text-xs text-gray-600 uppercase font-bold">{{ eyebrow }}</div>
-        <div class="font-bold text-gray-700 leading-snug">
+        <div class="text-xs text-grey-600 uppercase font-bold">{{ eyebrow }}</div>
+        <div class="font-bold text-grey-700 leading-snug">
           <a :href="url" class="hover:underline">{{ title }}</a>
         </div>
-        <div class="mt-2 text-sm text-gray-600">{{ pricing }}</div>
+        <div class="mt-2 text-sm text-grey-600">{{ pricing }}</div>
       </div>
     </div>
   </div>
@@ -145,7 +145,7 @@ In these situations, you can use Tailwind's `@apply` directive to easily extract
 
 Here's what a `.btn-blue` class might look like using `@apply` to compose it from existing utilities:
 
-@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-center'])
+@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-centre'])
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   Button
 </button>
@@ -212,12 +212,12 @@ Add custom component classes before your utilities
 
 Say you have these two buttons:
 
-@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-center'])
+@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-centre'])
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4">
   Button
 </button>
 
-<button class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded">
+<button class="bg-grey-400 hover:bg-grey-500 text-grey-800 font-bold py-2 px-4 rounded">
   Button
 </button>
 
@@ -226,7 +226,7 @@ Say you have these two buttons:
   Button
 </button>
 
-<button class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded">
+<button class="bg-grey-400 hover:bg-grey-500 text-grey-800 font-bold py-2 px-4 rounded">
   Button
 </button>
 @endslot
@@ -242,11 +242,11 @@ It might be tempting to implement component classes for these buttons like this:
   @@apply bg-blue-700;
 }
 
-.btn-gray {
-  @@apply bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded;
+.btn-grey {
+  @@apply bg-grey-400 text-grey-800 font-bold py-2 px-4 rounded;
 }
-.btn-gray:hover {
-  @@apply bg-gray-500;
+.btn-grey:hover {
+  @@apply bg-grey-500;
 }
 ```
 
@@ -268,22 +268,22 @@ A better approach is to extract the parts that are the same into a separate clas
   @@apply bg-blue-700;
 }
 
-.btn-gray {
-  @@apply bg-gray-400 text-gray-800;
+.btn-grey {
+  @@apply bg-grey-400 text-grey-800;
 }
-.btn-gray:hover {
-  @@apply bg-gray-500;
+.btn-grey:hover {
+  @@apply bg-grey-500;
 }
 ```
 
 Now you'd apply two classes any time you needed to style a button:
 
-@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-center'])
+@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-centre'])
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4">
   Button
 </button>
 
-<button class="bg-gray-400 hover:bg-gray-500 text-gray-800 font-bold py-2 px-4 rounded">
+<button class="bg-grey-400 hover:bg-grey-500 text-grey-800 font-bold py-2 px-4 rounded">
   Button
 </button>
 
@@ -292,7 +292,7 @@ Now you'd apply two classes any time you needed to style a button:
   Button
 </button>
 
-<button class="btn btn-gray">
+<button class="btn btn-grey">
   Button
 </button>
 @endslot
@@ -302,7 +302,7 @@ This makes it easy to change the shared styles in one place by just editing the 
 
 It also allows you to add new one-off button styles without being forced to create a new component class or duplicate the shared styles:
 
-@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-center'])
+@component('_partials.code-sample', ['lang' => 'html', 'class' => 'text-centre'])
 <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 rounded">
   Button
 </button>
@@ -331,14 +331,14 @@ module.exports = {
         },
         '.btn-blue': {
           backgroundColor: '#3490dc',
-          color: '#fff',
+          colour: '#fff',
           '&:hover': {
             backgroundColor: '#2779bd'
           },
         },
         '.btn-red': {
           backgroundColor: '#e3342f',
-          color: '#fff',
+          colour: '#fff',
           '&:hover': {
             backgroundColor: '#cc1f1a'
           },

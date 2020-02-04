@@ -43,8 +43,8 @@ Here's a simple example of a marketing page component that uses a stacked layout
   </div>
   <div class="mt-4 md:mt-0 md:ml-6">
     <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
-    <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a>
-    <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+    <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-grey-900 hover:underline">Finding customers for your new business</a>
+    <p class="mt-2 text-grey-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
   </div>
 </div>
 @endcomponent
@@ -56,7 +56,7 @@ Here's how the example above works:
 - On small screens the image is automatically full width by default. On medium screens and up, we've constrained that width to a fixed size using `md:w-56`.
 - On small screens, the content section uses `mt-4` to add some margin between the content and the image. This margin isn't necessary in the horizontal layout, so we've used `md:mt-0` to undo that margin, and used `md:ml-6` to add some left margin instead.
 
-We've only used one breakpoint in this example, but you could easily customize this component at other sizes using the `sm`, `lg`, or `xl` responsive prefixes as well.
+We've only used one breakpoint in this example, but you could easily customise this component at other sizes using the `sm`, `lg`, or `xl` responsive prefixes as well.
 
 ---
 
@@ -66,7 +66,7 @@ By default, Tailwind uses a mobile first breakpoint system, similar to what you 
 
 What this means is that unprefixed utilities (like `uppercase`) take effect on all screen sizes, while prefixed utilities (like `md:uppercase`) only take effect at the specified breakpoint *and above*.
 
-Here's a simple example that cycles through several background colors at different breakpoints *(resize your browser to see the background color change)*:
+Here's a simple example that cycles through several background colours at different breakpoints *(resize your browser to see the background colour change)*:
 
 @component('_partials.code-sample', ['class' => 'p-0'])
 <div class="h-20 w-20 mx-auto rounded-lg bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-teal-500"></div>
@@ -110,12 +110,12 @@ Examples like this intentionally **do not react to changing your browser size**.
 Where this approach surprises people most often is that to style something for mobile, you need to use the unprefixed version of a utility, not the `sm:` prefixed version. Don't think of `sm:` as meaning "on small screens", think of it as "at the small *breakpoint*".
 
 @component('_partials.tip-bad')
-Don't use <code class="text-sm font-bold text-gray-800">sm:</code> to target mobile devices
+Don't use <code class="text-sm font-bold text-grey-800">sm:</code> to target mobile devices
 @endcomponent
 
 ```html
-<!-- This will only center text on screens 640px and wider, not on small screens -->
-<div class="sm:text-center"></div>
+<!-- This will only centre text on screens 640px and wider, not on small screens -->
+<div class="sm:text-centre"></div>
 ```
 
 @component('_partials.tip-good')
@@ -123,8 +123,8 @@ Use unprefixed utilities to target mobile, and override them at larger breakpoin
 @endcomponent
 
 ```html
-<!-- This will center text on mobile, and left align it on screens 640px and wider -->
-<div class="text-center sm:text-left"></div>
+<!-- This will centre text on mobile, and left align it on screens 640px and wider -->
+<div class="text-centre sm:text-left"></div>
 ```
 
 For this reason, it's often a good idea to implement the mobile layout for a design first, then layer on any changes that make sense for `sm` screens, followed by `md` screens, etc.
@@ -135,7 +135,7 @@ Tailwind's breakpoints only include a `min-width` and don't include a `max-width
 
 If you'd like to apply a utility at one breakpoint only, the solution is to *undo* that utility at larger sizes by adding another utility that counteracts it.
 
-Here is an example where the background color is red at the `md` breakpoint, but teal at every other breakpoint:
+Here is an example where the background colour is red at the `md` breakpoint, but teal at every other breakpoint:
 
 @component('_partials.responsive-code-sample')
 @slot('none')
@@ -163,13 +163,13 @@ Here is an example where the background color is red at the `md` breakpoint, but
 @endslot
 @endcomponent
 
-Notice that **we did not** have to specify a background color for the `sm` breakpoint or the `xl` breakpoint — you only need to specify when a utility should *start* taking effect, not when it should stop.
+Notice that **we did not** have to specify a background colour for the `sm` breakpoint or the `xl` breakpoint — you only need to specify when a utility should *start* taking effect, not when it should stop.
 
 ---
 
 ## Customizing breakpoints
 
-You can completely customize your breakpoints in your `tailwind.config.js` file:
+You can completely customise your breakpoints in your `tailwind.config.js` file:
 
 ```js
 // tailwind.config.js
@@ -189,4 +189,4 @@ module.exports = {
 }
 ```
 
-Learn more in the [customizing breakpoints documentation](/docs/breakpoints).
+Learn more in the [customising breakpoints documentation](/docs/breakpoints).

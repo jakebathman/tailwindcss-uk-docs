@@ -93,7 +93,7 @@ By default, Tailwind includes a generous and comprehensive numeric spacing scale
       <td>{{ $width }}</td>
       <td>{{ strpos($width, 'px') === false ? str_replace('rem', '', $width) * 16  . 'px' : $width }}</td>
       <td class="hidden sm:table-cell">
-        <div class="h-4 bg-gray-400 w-{{ $name }}"></div>
+        <div class="h-4 bg-grey-400 w-{{ $name }}"></div>
       </td>
     </tr>
     @endforeach

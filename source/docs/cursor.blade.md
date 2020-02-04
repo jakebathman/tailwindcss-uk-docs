@@ -53,8 +53,8 @@ features:
 
 Use `.cursor-auto` to allow the browser to change the cursor based on the current content (e.g. automatically change to `text` cursor when hovering over text).
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-auto max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-auto max-w-xs p-2 bg-grey-200 mx-auto">
   Hover over this text
 </div>
 @slot('code')
@@ -68,8 +68,8 @@ Use `.cursor-auto` to allow the browser to change the cursor based on the curren
 
 Use `.cursor-default` to change the mouse cursor to always use the platform-dependent default cursor (usually an arrow).
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-default max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-default max-w-xs p-2 bg-grey-200 mx-auto">
   Hover over this text
 </div>
 @slot('code')
@@ -83,8 +83,8 @@ Use `.cursor-default` to change the mouse cursor to always use the platform-depe
 
 Use `.cursor-pointer` to change the mouse cursor to indicate an interactive element (usually a pointing hand).
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-pointer max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-pointer max-w-xs p-2 bg-grey-200 mx-auto">
   Hover me
 </div>
 @slot('code')
@@ -98,8 +98,8 @@ Use `.cursor-pointer` to change the mouse cursor to indicate an interactive elem
 
 Use `.cursor-wait` to change the mouse cursor to indicate something is happening in the background (usually an hourglass or watch).
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-wait max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-wait max-w-xs p-2 bg-grey-200 mx-auto">
   Hover me
 </div>
 @slot('code')
@@ -113,8 +113,8 @@ Use `.cursor-wait` to change the mouse cursor to indicate something is happening
 
 Use `.cursor-text` to change the mouse cursor to indicate the text can be selected (usually an I-beam shape).
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-text max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-text max-w-xs p-2 bg-grey-200 mx-auto">
   Hover me
 </div>
 @slot('code')
@@ -128,8 +128,8 @@ Use `.cursor-text` to change the mouse cursor to indicate the text can be select
 
 Use `.cursor-move` to change the mouse cursor to indicate something that can be moved.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-move max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-move max-w-xs p-2 bg-grey-200 mx-auto">
   Hover me
 </div>
 @slot('code')
@@ -143,8 +143,8 @@ Use `.cursor-move` to change the mouse cursor to indicate something that can be 
 
 Use `.cursor-not-allowed` to change the mouse cursor to indicate something can not be interacted with or clicked.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="cursor-not-allowed max-w-xs p-2 bg-gray-200 mx-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="cursor-not-allowed max-w-xs p-2 bg-grey-200 mx-auto">
   Hover me
 </div>
 @slot('code')
@@ -160,7 +160,7 @@ Use `.cursor-not-allowed` to change the mouse cursor to indicate something can n
 
 By default Tailwind provides six `cursor` utilities. You change, add, or remove these by editing the `theme.cursor` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.cursor'])
+@component('_partials.customised-config', ['key' => 'theme.cursor'])
   auto: 'auto',
   default: 'default',
   pointer: 'pointer',

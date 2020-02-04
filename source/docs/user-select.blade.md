@@ -29,7 +29,7 @@ features:
    [
      '.select-auto',
      'user-select: auto;',
-     "Default browser behavior",
+     "Default browser behaviour",
    ],
  ]
 ])
@@ -38,8 +38,8 @@ features:
 
 Use `.select-none` to prevent selecting text in an element and its children.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="mx-auto max-w-sm bg-gray-200 p-2 select-none">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="mx-auto max-w-sm bg-grey-200 p-2 select-none">
   This text is not selectable
 </div>
 @slot('code')
@@ -53,8 +53,8 @@ Use `.select-none` to prevent selecting text in an element and its children.
 
 Use `.select-text` to allow selecting text in an element and its children.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="mx-auto max-w-sm bg-gray-200 p-2 select-text">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="mx-auto max-w-sm bg-grey-200 p-2 select-text">
   This text is selectable
 </div>
 @slot('code')
@@ -68,8 +68,8 @@ Use `.select-text` to allow selecting text in an element and its children.
 
 Use `.select-all` to automatically select all the text in an element when a user clicks.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="mx-auto max-w-sm bg-gray-200 p-2 select-all">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="mx-auto max-w-sm bg-grey-200 p-2 select-all">
   Click anywhere in this text to select it all
 </div>
 @slot('code')
@@ -81,10 +81,10 @@ Use `.select-all` to automatically select all the text in an element when a user
 
 ## Auto
 
-Use `.select-auto` to use the default browser behavior for selecting text. Useful for undoing other classes like `.select-none` at different breakpoints.
+Use `.select-auto` to use the default browser behaviour for selecting text. Useful for undoing other classes like `.select-none` at different breakpoints.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
-<div class="mx-auto max-w-sm bg-gray-200 p-2 select-auto">
+@component('_partials.code-sample', ['class' => 'text-centre'])
+<div class="mx-auto max-w-sm bg-grey-200 p-2 select-auto">
   This text is selectable
 </div>
 @slot('code')

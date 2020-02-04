@@ -7,7 +7,7 @@ titleBorder: true
 
 Tailwind v1.0 is mostly focused on changing things from 0.x that I would have done differently had I known in advance where the feature set would be at today.
 
-So while there's not a ton of exciting new features, you can at least be excited about the fact that we now have a really stable base to build on, and that you can feel comfortable using Tailwind in production if the 0.x label gave you pause.
+So while there's not a tonne of exciting new features, you can at least be excited about the fact that we now have a really stable base to build on, and that you can feel comfortable using Tailwind in production if the 0.x label gave you pause.
 
 ## Upgrade steps for all users
 
@@ -24,10 +24,10 @@ These changes affect all users, whether you are using Tailwind with PostCSS and 
 9. [Replace `.pin-{side}` with `.{top|left|bottom|right|inset}-{value}`](#9-replace-pin-side-with-top-left-bottom-right-inset-value)
 10. [Replace `.roman` with `.not-italic`](#10-replace-roman-with-not-italic)
 11. [Replace `.flex-no-grow/shrink` with `.flex-grow/shrink-0`](#11-replace-flex-no-grow-shrink-with-flex-grow-shrink-0)
-12. [Explicitly add color and underline styles to links](#12-explicitly-add-color-and-underline-styles-to-links)
+12. [Explicitly add colour and underline styles to links](#12-explicitly-add-colour-and-underline-styles-to-links)
 13. [Add `inline` to any replaced elements (`img`, `video`, etc.) that should not be `display: block`](#13-add-inline-to-any-replaced-elements-img-video-etc-that-should)
 14. [Adjust the line-height and padding on your form elements](#14-adjust-the-line-height-and-padding-on-your-form-elements)
-15. [Adjust the text color on your form elements](#15-adjust-the-text-color-on-your-form-elements)
+15. [Adjust the text colour on your form elements](#15-adjust-the-text-colour-on-your-form-elements)
 16. [Double check your default font family](#16-double-check-your-default-font-family)
 17. [Double check your default line-height](#17-double-check-your-default-line-height)
 
@@ -36,7 +36,7 @@ These changes affect all users, whether you are using Tailwind with PostCSS and 
 Install the latest version of Tailwind:
 
 ```bash
-npm install tailwindcss@^1.0 --save-dev
+npm instal tailwindcss@^1.0 --save-dev
 ```
 
 Or using Yarn:
@@ -47,7 +47,7 @@ yarn add -D tailwindcss@^1.0
 
 <h3 class="no-toc">2. Update your config file</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: All users, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: All users, Effort: Moderate</p>
 
 This is really the big change in v1.0 — you can read all about the new config file format and motivation behind it in [the initial pull request](https://github.com/tailwindcss/tailwindcss/pull/637).
 
@@ -59,7 +59,7 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
-    colors: { ... },
+    colours: { ... },
     // ...
     zIndex: { ... },
   },
@@ -76,7 +76,7 @@ module.exports = {
 
 See the new [default config file](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js) for a complete example.
 
-There are a lot of changes here but they are all fairly cosmetic and entirely localized to this one file, so while it may look intimidating it's actually only 10-15 minutes of work.
+There are a lot of changes here but they are all fairly cosmetic and entirely localised to this one file, so while it may look intimidating it's actually only 10-15 minutes of work.
 
 #### 2.1. Move all design-related top-level keys into a new section called `theme`
 
@@ -87,12 +87,12 @@ Your config file should look generally like this at this point:
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
   module.exports = {
--   colors: colors,
+-   colours: colours,
 -   screens: {
 -     // ...
 -   },
@@ -101,7 +101,7 @@ Your config file should look generally like this at this point:
 -     // ...
 -   },
 +   theme: {
-+     colors: colors,
++     colours: colours,
 +     screens: {
 +       // ...
 +     },
@@ -139,7 +139,7 @@ After making this change, your config file should look like this:
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
@@ -177,7 +177,7 @@ After making this change, your config file should look like this:
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
@@ -355,7 +355,7 @@ In v1.0, to disable a plugin you need to set it to `false` in the `corePlugins` 
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
@@ -391,7 +391,7 @@ In v1.0, the `container` plugin is a core plugin just like `padding`, `margin`, 
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
@@ -407,7 +407,7 @@ In v1.0, the `container` plugin is a core plugin just like `padding`, `margin`, 
     },
     plugins: [
 -     require('tailwindcss/plugins/container')({
--       center: true,
+-       centre: true,
 -       padding: '1rem',
 -     }),
     ],
@@ -419,7 +419,7 @@ If you had already removed the container plugin because you don't want those cla
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
@@ -439,12 +439,12 @@ If you had already removed the container plugin because you don't want those cla
   }
 ```
 
-If you are taking advantage of the `center` or `padding` options exposed by the `container` plugin, you should specify those options under `theme.container` instead of as direct arguments to the plugin.
+If you are taking advantage of the `centre` or `padding` options exposed by the `container` plugin, you should specify those options under `theme.container` instead of as direct arguments to the plugin.
 
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-  let colors = {
+  let colours = {
     // ...
   }
 
@@ -455,7 +455,7 @@ If you are taking advantage of the `center` or `padding` options exposed by the 
     theme: {
       // ...
 +     container: {
-+       center: true,
++       centre: true,
 +       padding: '1rem',
 +     }
     },
@@ -464,23 +464,23 @@ If you are taking advantage of the `center` or `padding` options exposed by the 
     },
     plugins: [
 -     require('tailwindcss/plugins/container')({
--       center: true,
+-       centre: true,
 -       padding: '1rem',
 -     }),
     ],
   }
 ```
 
-#### 2.9. Inline your `colors` variable into `theme.colors`
+#### 2.9. Inline your `colours` variable into `theme.colours`
 
-In v1.0, it's possible to specify that parts of your theme _depend_ on other parts of your theme, and because of that it's no longer necessary to hold your `colors` in a separate variable.
+In v1.0, it's possible to specify that parts of your theme _depend_ on other parts of your theme, and because of that it's no longer necessary to hold your `colours` in a separate variable.
 
-Start by inlining your `colors` variable directly into `theme.colors`:
+Start by inlining your `colours` variable directly into `theme.colours`:
 
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
 
-- let colors = {
+- let colours = {
 -   'transparent': 'transparent',
 -   'black': '#22292f',
 -   // ...
@@ -492,8 +492,8 @@ Start by inlining your `colors` variable directly into `theme.colors`:
     important: false,
     separator: ':',
     theme: {
--     colors: colors,
-+     colors: {
+-     colours: colours,
++     colours: {
 +       'transparent': 'transparent',
 +       'black': '#22292f',
 +       // ...
@@ -508,7 +508,7 @@ Start by inlining your `colors` variable directly into `theme.colors`:
   }
 ```
 
-Next, update any sections that were referencing the `colors` variable using the new closure syntax:
+Next, update any sections that were referencing the `colours` variable using the new closure syntax:
 
 ```diff
   let defaultConfig = require('tailwindcss/defaultConfig')()
@@ -518,23 +518,23 @@ Next, update any sections that were referencing the `colors` variable using the 
     important: false,
     separator: ':',
     theme: {
-      colors: {
+      colours: {
         'transparent': 'transparent',
         'black': '#22292f',
         // ...
         'pink-lightest': '#ffebef','
       },
       // ...
--     backgroundColor: colors,
-+     backgroundColor: theme => theme('colors'),
+-     backgroundColor: colours,
++     backgroundColor: theme => theme('colours'),
       // ...
--     textColor: colors,
-+     textColor: theme => theme('colors'),
+-     textColor: colours,
++     textColor: theme => theme('colours'),
       // ...
--     borderColor: global.Object.assign({ default: colors['grey-light'] }, colors),
+-     borderColor: global.Object.assign({ default: colours['grey-light'] }, colours),
 +     borderColor: theme => ({
-+       default: theme('colors.grey-light'),
-+       ...theme('colors'),
++       default: theme('colours.grey-light'),
++       ...theme('colours'),
 +     }),
       // ...
     },
@@ -569,11 +569,11 @@ In v1.0, it simply returns the object:
   }
 ```
 
-#### 2.11. Remove any configuration you haven't customized
+#### 2.11. Remove any configuration you haven't customised
 
 One of the philosophical changes in v1.0 is that we are encouraging people to use their configuration files solely for specifying _changes_ from the default config, rather than including the entire default config _plus_ their changes.
 
-Every single key in the config file is optional (in fact the file itself is optional too), so if there are things you've never customized, you're encouraged to remove them entirely.
+Every single key in the config file is optional (in fact the file itself is optional too), so if there are things you've never customised, you're encouraged to remove them entirely.
 
 For example, if you aren't specifying a custom separator or prefix or enabling the `important` option, you can remove them entirely:
 
@@ -610,7 +610,7 @@ Similarly, if you aren't referencing the `defaultConfig` variable anywhere, remo
   }
 ```
 
-If you haven't customized the `opacity` values, remove them:
+If you haven't customised the `opacity` values, remove them:
 
 ```diff
   module.exports = {
@@ -645,15 +645,15 @@ The way your configuration is merged with the defaults is designed to be very in
 
 It's worth noting that you are not _required_ to remove any redundant configuration, so if you'd prefer to own the entire system and be able to see it all in one place, you're absolutely welcome to keep everything in your config file.
 
-**It's very important to realize that many of the theme values have changed from v0.7.4 to v1.0**, so just because you never customized a value that shipped by default in v0.x, that doesn't guarantee that you are safe to remove it from your config file.
+**It's very important to realise that many of the theme values have changed from v0.7.4 to v1.0**, so just because you never customised a value that shipped by default in v0.x, that doesn't guarantee that you are safe to remove it from your config file.
 
-A perfect example of this is colors. The default color palette is completely new in v1.0 with a new naming scheme, so even if you were using the default color palette in v0.x, you're actually using a custom color palette in v1.0.
+A perfect example of this is colours. The default colour palette is completely new in v1.0 with a new naming scheme, so even if you were using the default colour palette in v0.x, you're actually using a custom colour palette in v1.0.
 
 **Always double check that anything you want to remove is identical to the _new_ default config file values before you remove it.**
 
 <h3 class="no-toc">3. Rename <code>tailwind.js</code> to <code>tailwind.config.js</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: N/A, Effort: Trivial</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: N/A, Effort: Trivial</p>
 
 This is entirely optional but recommended — if you are using the old default config file name (`tailwind.js`), rename it to `tailwind.config.js`.
 
@@ -679,7 +679,7 @@ If you keep your config file in a different folder, you'll still need to provide
 
 <h3 class="no-toc">4. Replace <code>@@tailwind preflight</code> with <code>@@tailwind base</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: All users, Effort: Trivial</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: All users, Effort: Trivial</p>
 
 One of the new features in v1.0 is the ability for plugins to register base styles. As a result, our `preflight` styles are actually just another core plugin now, and the general "bucket" for base styles has been renamed from `preflight` to `base`.
 
@@ -707,7 +707,7 @@ If you are using `postcss-import` and relying on our imports instead of the `@@t
 
 <h3 class="no-toc">5. Replace <code>config()</code> with <code>theme()</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Moderate, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Moderate, Effort: Low</p>
 
 The `config()` helper function that Tailwind makes available to your CSS files has been replaced with a new `theme()` function that is automatically scoped to the `theme` section of your config file and should work as a drop-in replacement:
 
@@ -723,7 +723,7 @@ A simple find and replace across your CSS files that switches `config(` to `them
 
 <h3 class="no-toc">6. Explicitly style any headings</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Moderate, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Moderate, Effort: Moderate</p>
 
 If you are using our `preflight` styles, all `h1-h6` elements are unstyled by default in v1.0.
 
@@ -748,7 +748,7 @@ This is a bit of an annoying change, but if it breaks your site, you could argue
 
 <h3 class="no-toc">7. Explicitly style any lists that should have bullets/numbers</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Moderate, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Moderate, Effort: Moderate</p>
 
 If you are using our `preflight` styles, all `ul` and `ol` elements are unstyled by default in v1.0.
 
@@ -783,7 +783,7 @@ ol {
 
 <h3 class="no-toc">8. Remove any usage of <code>.list-reset</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Moderate, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Moderate, Effort: Low</p>
 
 Since lists are now unstyled by default, `.list-reset` has been removed. You technically don't need to change anything, but you're encouraged to remove any usage of it as it's now just dead code:
 
@@ -805,9 +805,9 @@ This change only really affects you if you are _not_ using our `preflight` style
 
 <h3 class="no-toc">9. Replace <code>.pin-{side}</code> with <code>.{top|left|bottom|right|inset}-{value}</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: High, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: High, Effort: Moderate</p>
 
-Utilities like `.pin`, `.pin-x`, and `.pin-t` have been removed in favor of less cleverly named classes like `.top-0`, `.right-0`, etc.
+Utilities like `.pin`, `.pin-x`, and `.pin-t` have been removed in favour of less cleverly named classes like `.top-0`, `.right-0`, etc.
 
 See the [pull request](https://github.com/tailwindcss/tailwindcss/pull/764) for more details on the motivation behind this change.
 
@@ -841,7 +841,7 @@ This is an annoying change, sorry.
 
 <h3 class="no-toc">10. Replace <code>.roman</code> with <code>.not-italic</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Low</p>
 
 Previously we used the name `.roman` for `font-style: normal` because of a bug in `postcss-selector-not` that prevented us from using `.not-italic`. That bug has been fixed, so this name has been changed.
 
@@ -856,7 +856,7 @@ I would be surprised if more than 5 people are even affected by this, I've never
 
 <h3 class="no-toc">11. Replace <code>.flex-no-grow/shrink</code> with <code>.flex-grow/shrink-0</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: High, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: High, Effort: Low</p>
 
 In order to make these utilities more easily customizable, their names have changed to match our existing conventions.
 
@@ -874,13 +874,13 @@ In order to make these utilities more easily customizable, their names have chan
 
 These utilities are also now customizable in the `theme.flexGrow` and `theme.flexShrink` sections of your config file.
 
-<h3 class="no-toc">12. Explicitly add color and underline styles to links</h3>
+<h3 class="no-toc">12. Explicitly add colour and underline styles to links</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: High, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: High, Effort: Moderate</p>
 
-In v1.0, `a` tags automatically inherit the parent `color` and `text-decoration` styles which means that by default links are no longer blue and do not have an underline.
+In v1.0, `a` tags automatically inherit the parent `colour` and `text-decoration` styles which means that by default links are no longer blue and do not have an underline.
 
-You are likely already adding a text color class like `text-green-dark` or similar to your links because you probably didn't want the default browser-blue color, but if not you'll need to add a color explicitly:
+You are likely already adding a text colour class like `text-green-dark` or similar to your links because you probably didn't want the default browser-blue colour, but if not you'll need to add a colour explicitly:
 
 ```diff
 - <a href="#">
@@ -913,7 +913,7 @@ If you really don't like these new defaults, you can add your own base link styl
 @@tailwind base;
 
 a {
-  color: theme('colors.blue');
+  colour: theme('colours.blue');
   text-decoration: underline;
 }
 
@@ -923,7 +923,7 @@ a {
 
 <h3 class="no-toc">13. Add <code>inline</code> to any replaced elements (<code>img</code>, <code>video</code>, etc.) that should not be <code>display: block</code></h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Moderate, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Moderate, Effort: Moderate</p>
 
 In v1.0, all replaced elements (like `img`, `svg`, `video`, `canvas`, `iframe`, etc.) are set to `display: block` by default. This is counter to the browser default which is `inline`.
 
@@ -941,11 +941,11 @@ I don't think this will actually affect many people or projects, as you almost a
 
 <h3 class="no-toc">14. Adjust the line-height and padding on your form elements</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: High, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: High, Effort: Moderate</p>
 
 **If you are already setting an explicit line-height on form elements, this change will not affect you.**
 
-In v0.x, we used a line-height of 1.15 for form elements by default, sort of incidentally by depending on normalize.css.
+In v0.x, we used a line-height of 1.15 for form elements by default, sort of incidentally by depending on normalise.css.
 
 This made it very easy to forget to add an explicit line-height like `leading-tight` or `leading-normal` to form elements, introducing a new line-height (1.15) into your project that doesn't match any of the `leading-{size}` utilities.
 
@@ -991,15 +991,15 @@ textarea {
 @@tailwind utilities;
 ```
 
-<h3 class="no-toc">15. Adjust the text color on your form elements</h3>
+<h3 class="no-toc">15. Adjust the text colour on your form elements</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Moderate</p>
 
-**If you are already setting an explicit text color on form elements, this change will not affect you.**
+**If you are already setting an explicit text colour on form elements, this change will not affect you.**
 
-In v0.x, form elements used black text by default, even though true black was not part of the default color palette.
+In v0.x, form elements used black text by default, even though true black was not part of the default colour palette.
 
-In v1.0, form elements inherit their text color from the parent, which means if you have any markup like this:
+In v1.0, form elements inherit their text colour from the parent, which means if you have any markup like this:
 
 ```html
 <div class="text-red">
@@ -1009,7 +1009,7 @@ In v1.0, form elements inherit their text color from the parent, which means if 
 
 ...your `input` would have red text instead of black text.
 
-You can fix this by setting a text color on form elements explicitly:
+You can fix this by setting a text colour on form elements explicitly:
 
 ```diff
   <div class="text-red">
@@ -1020,7 +1020,7 @@ You can fix this by setting a text color on form elements explicitly:
 
 <h3 class="no-toc">16. Double check your default font family</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Trivial</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Trivial</p>
 
 **If you are already setting a default font family on your project (either with a class on `html`/`body` or using custom CSS), this change will not affect you.**
 
@@ -1043,11 +1043,11 @@ html {
 
 <h3 class="no-toc">17. Double check your default line-height</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Moderate, Effort: Moderate</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Moderate, Effort: Moderate</p>
 
 **If you are already setting a default line-height on your project (either with a class on `html`/`body` or using custom CSS), this change will not affect you.**
 
-In v0.x, the default line-height was 1.15 (inherited from normalize.css). Since that value isn't part of Tailwind's default theme, we've opted to change it to 1.5 for v1.0 so the default line-height matches a value in the line-height scale.
+In v0.x, the default line-height was 1.15 (inherited from normalise.css). Since that value isn't part of Tailwind's default theme, we've opted to change it to 1.5 for v1.0 so the default line-height matches a value in the line-height scale.
 
 This means that if you are not setting a line-height either using a `leading-{size}` class on the `html` or `body` tags or by adding some base styles to your CSS, most things on your site are going to appear a little bit taller.
 
@@ -1072,57 +1072,57 @@ However, a better long-term solution would be to pick a default line-height that
 
 These steps only affect users that are depending on the 0.x configuration file values. This includes CDN users, or anyone that is omitting sections from their config file, referencing our config file, or not using a config file at all.
 
-1. [Update any usage of `text/bg/border-{color}` classes](#1-update-any-usage-of-text-bg-border-color-classes)
+1. [Update any usage of `text/bg/border-{colour}` classes](#1-update-any-usage-of-text-bg-border-colour-classes)
 2. [Replace `tracking-tight/wide` with `tracking-tighter/wider`](#2-replace-tracking-tight-wide-with-tracking-tighter-wider)
 3. [Check your design against the updated default breakpoints](#3-check-your-design-against-the-updated-default-breakpoints)
 4. [Double check any usage of the default `shadow-{size}` utilities](#4-double-check-any-usage-of-the-default-shadow-size-utilities)
 5. [Update any usage of the default `max-w-{size}` utilities](#5-update-any-usage-of-the-default-max-w-size-utilities)
 
-<h3 class="no-toc mt-12">1. Update any usage of <code>text/bg/border-{color}</code> classes</h3>
+<h3 class="no-toc mt-12">1. Update any usage of <code>text/bg/border-{colour}</code> classes</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: High</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: High</p>
 
-**This change only affects you if you don't have a color palette defined in your config file or you are using Tailwind through a CDN.**
+**This change only affects you if you don't have a colour palette defined in your config file or you are using Tailwind through a CDN.**
 
-Tailwind v1.0 comes with an entirely new color palette that provides 9 shades for each color instead of 7 ([\#737](https://github.com/tailwindcss/tailwindcss/pull/737)).
+Tailwind v1.0 comes with an entirely new colour palette that provides 9 shades for each colour instead of 7 ([\#737](https://github.com/tailwindcss/tailwindcss/pull/737)).
 
 The naming scheme has changed from using words like `darkest` and `lighter` to a numeric scaled inspired by Material Design that starts at `100` for the lightest shade and ends at `900` for the darkest shade.
 
-There is no way to map the old colors to the new colors 1:1 because the new palette includes more shades, so if you are using the v0.x default color palette and would like to upgrade to the new color palette, you are in for some fun (you're not).
+There is no way to map the old colours to the new colours 1:1 because the new palette includes more shades, so if you are using the v0.x default colour palette and would like to upgrade to the new colour palette, you are in for some fun (you're not).
 
-I would recommend starting with the following substitutions and then adjusting colors up or down a shade on a case-by-case basis as you feel is needed.
+I would recommend starting with the following substitutions and then adjusting colours up or down a shade on a case-by-case basis as you feel is needed.
 
-For grays (note that `grey` has changed to `gray`):
+For greys (note that `grey` has changed to `grey`):
 
 | Old | New |
 | --- | --- |
-| black | gray-900 |
-| grey-darkest | gray-800 |
-| grey-darker | gray-700 |
-| grey-dark | gray-600 |
-| grey | gray-500 |
-| grey-light | gray-400 |
-| grey-lighter | gray-200 |
-| grey-lightest | gray-100 |
+| black | grey-900 |
+| grey-darkest | grey-800 |
+| grey-darker | grey-700 |
+| grey-dark | grey-600 |
+| grey | grey-500 |
+| grey-light | grey-400 |
+| grey-lighter | grey-200 |
+| grey-lightest | grey-100 |
 | white | white |
 
-For other colors:
+For other colours:
 
 | Old | New |
 | --- | --- |
-| {color}-darkest | {color}-900 |
-| {color}-darker | {color}-800 |
-| {color}-dark | {color}-600 |
-| {color} | {color}-500 |
-| {color}-light | {color}-400 |
-| {color}-lighter | {color}-200 |
-| {color}-lightest | {color}-100 |
+| {colour}-darkest | {colour}-900 |
+| {colour}-darker | {colour}-800 |
+| {colour}-dark | {colour}-600 |
+| {colour} | {colour}-500 |
+| {colour}-light | {colour}-400 |
+| {colour}-lighter | {colour}-200 |
+| {colour}-lightest | {colour}-100 |
 
-Again, this change only affects you if you do not have your own color palette specified in your config file, or you are using the default Tailwind build through a CDN. If you are using the v0.x color palette in your project, you can absolutely keep using it. You do not need to make these changes unless you have a hard dependency on our default color palette in some way.
+Again, this change only affects you if you do not have your own colour palette specified in your config file, or you are using the default Tailwind build through a CDN. If you are using the v0.x colour palette in your project, you can absolutely keep using it. You do not need to make these changes unless you have a hard dependency on our default colour palette in some way.
 
 <h3 class="no-toc">2. Replace <code>tracking-tight/wide</code> with `tracking-tighter/wider`</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Low</p>
 
 **This change only affects you if you don't have a tracking/letter-spacing scale defined in your config file or you are using Tailwind through a CDN.**
 
@@ -1149,7 +1149,7 @@ If you started with a complete config file, your old scale will continue to work
 
 <h3 class="no-toc">3. Check your design against the updated default breakpoints</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Low</p>
 
 **This change only affects you if you don't have `screens` defined in your config file or you are using Tailwind through a CDN.**
 
@@ -1170,7 +1170,7 @@ If you started with a complete config file, your old screens values will continu
 
 <h3 class="no-toc">4. Double check any usage of the default <code>shadow-{size}</code> utilities</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Low</p>
 
 **This change only affects you if you don't have a box-shadow scale defined in your config file or you are using Tailwind through a CDN.**
 
@@ -1185,7 +1185,7 @@ If you started with a complete config file, your old box-shadow values will cont
 
 <h3 class="no-toc">5. Update any usage of the default <code>max-w-{size}</code> utilities</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Low</p>
 
 **This change only affects you if you don't have a max-width scale defined in your config file or you are using Tailwind through a CDN.**
 
@@ -1205,7 +1205,7 @@ This step only affects users who have authored their own plugins.
 
 <h3 class="no-toc mt-6">Escape the class portion of any custom variants you have created</h3>
 
-<p class="italic font-normal text-gray-600 mt-4">Impact: Low, Effort: Low</p>
+<p class="italic font-normal text-grey-600 mt-4">Impact: Low, Effort: Low</p>
 
 In v1.0, you are required to manually escape the class name portion of any selectors you create when adding a new variant using a plugin.
 

@@ -17,9 +17,9 @@ features:
       "Justify items against the start of the container.",
     ],
     [
-      '.justify-center',
-      'justify-content: center;',
-      "Justify items in the center of the container.",
+      '.justify-centre',
+      'justify-content: centre;',
+      "Justify items in the centre of the container.",
     ],
     [
       '.justify-end',
@@ -44,22 +44,22 @@ features:
 Use `.justify-start` to justify items against the start of the flex container's main axis:
 
 @component('_partials.code-sample')
-<div class="flex justify-start bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-start bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
 ## Center
 
-Use `.justify-center` to justify items along the center of the flex container's main axis:
+Use `.justify-centre` to justify items along the centre of the flex container's main axis:
 
 @component('_partials.code-sample')
-<div class="flex justify-center bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-centre bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -68,10 +68,10 @@ Use `.justify-center` to justify items along the center of the flex container's 
 Use `.justify-end` to justify items against the end of the flex container's main axis:
 
 @component('_partials.code-sample')
-<div class="flex justify-end bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-end bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -80,10 +80,10 @@ Use `.justify-end` to justify items against the end of the flex container's main
 Use `.justify-between` to justify items along the flex container's main axis such that there is an equal amount of space between each item:
 
 @component('_partials.code-sample')
-<div class="flex justify-between bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-between bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -92,10 +92,10 @@ Use `.justify-between` to justify items along the flex container's main axis suc
 Use `.justify-around` to justify items along the flex container's main axis such that there is an equal amount of space around each item:
 
 @component('_partials.code-sample')
-<div class="flex justify-around bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-around bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -107,42 +107,42 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="flex justify-start bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-start bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('sm')
-<div class="flex justify-center bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-centre bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('md')
-<div class="flex justify-end bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-end bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('lg')
-<div class="flex justify-between bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-between bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('xl')
-<div class="flex justify-around bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex justify-around bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('code')
-<div class="none:justify-start sm:justify-center md:justify-end lg:justify-between xl:justify-around ...">
+<div class="none:justify-start sm:justify-centre md:justify-end lg:justify-between xl:justify-around ...">
   <!-- ... -->
 </div>
 @endslot

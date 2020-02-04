@@ -47,36 +47,36 @@ Use `.border-{style}` to control an element's border style.
 <div class="block sm:flex sm:justify-around">
   <div class="sm:w-3/5 sm:mb-0 flex justify-around mb-6">
     <div class="flex-1">
-      <p class="text-center text-sm text-gray-600 mb-1">.border-solid</p>
-      <div class="mx-auto w-24 h-24 bg-gray-400 border-4 border-gray-600 border-solid"></div>
+      <p class="text-centre text-sm text-grey-600 mb-1">.border-solid</p>
+      <div class="mx-auto w-24 h-24 bg-grey-400 border-4 border-grey-600 border-solid"></div>
     </div>
     <div class="flex-1">
-      <p class="text-center text-sm text-gray-600 mb-1">.border-dashed</p>
-      <div class="mx-auto w-24 h-24 bg-gray-400 border-4 border-gray-600 border-dashed"></div>
+      <p class="text-centre text-sm text-grey-600 mb-1">.border-dashed</p>
+      <div class="mx-auto w-24 h-24 bg-grey-400 border-4 border-grey-600 border-dashed"></div>
     </div>
     <div class="flex-1">
-      <p class="text-center text-sm text-gray-600 mb-1">.border-dotted</p>
-      <div class="mx-auto w-24 h-24 bg-gray-400 border-4 border-gray-600 border-dotted"></div>
+      <p class="text-centre text-sm text-grey-600 mb-1">.border-dotted</p>
+      <div class="mx-auto w-24 h-24 bg-grey-400 border-4 border-grey-600 border-dotted"></div>
     </div>
   </div>
   <div class="sm:w-2/5 flex justify-around">
     <div class="flex-1">
-      <p class="text-center text-sm text-gray-600 mb-1">.border-double</p>
-      <div class="mx-auto w-24 h-24 bg-gray-400 border-4 border-gray-600 border-double"></div>
+      <p class="text-centre text-sm text-grey-600 mb-1">.border-double</p>
+      <div class="mx-auto w-24 h-24 bg-grey-400 border-4 border-grey-600 border-double"></div>
     </div>
     <div class="flex-1">
-      <p class="text-center text-sm text-gray-600 mb-1">.border-none</p>
-      <div class="mx-auto w-24 h-24 bg-gray-400 border-4 border-gray-600 border-none"></div>
+      <p class="text-centre text-sm text-grey-600 mb-1">.border-none</p>
+      <div class="mx-auto w-24 h-24 bg-grey-400 border-4 border-grey-600 border-none"></div>
     </div>
     <div class="flex-1 sm:hidden"></div>
   </div>
 </div>
 @slot('code')
-<div class="border-solid border-4 border-gray-600 ..."></div>
-<div class="border-dashed border-4 border-gray-600 ..."></div>
-<div class="border-dotted border-4 border-gray-600 ..."></div>
-<div class="border-double border-4 border-gray-600 ..."></div>
-<div class="border-none border-4 border-gray-600 ..."></div>
+<div class="border-solid border-4 border-grey-600 ..."></div>
+<div class="border-dashed border-4 border-grey-600 ..."></div>
+<div class="border-dotted border-4 border-grey-600 ..."></div>
+<div class="border-double border-4 border-grey-600 ..."></div>
+<div class="border-none border-4 border-grey-600 ..."></div>
 @endslot
 @endcomponent
 
@@ -88,19 +88,19 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="border-solid w-24 h-24 mx-auto border-8 border-gray-600 bg-gray-400"></div>
+<div class="border-solid w-24 h-24 mx-auto border-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('sm')
-<div class="border-dashed w-24 h-24 mx-auto border-8 border-gray-600 bg-gray-400"></div>
+<div class="border-dashed w-24 h-24 mx-auto border-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('md')
-<div class="border-dotted w-24 h-24 mx-auto border-8 border-gray-600 bg-gray-400"></div>
+<div class="border-dotted w-24 h-24 mx-auto border-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('lg')
-<div class="border-double w-24 h-24 mx-auto border-8 border-gray-600 bg-gray-400"></div>
+<div class="border-double w-24 h-24 mx-auto border-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('xl')
-<div class="border-none w-24 h-24 mx-auto border-8 border-gray-600 bg-gray-400"></div>
+<div class="border-none w-24 h-24 mx-auto border-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('code')
 <div class="none:border-solid sm:border-dashed md:border-dotted lg:border-double xl:border-none">

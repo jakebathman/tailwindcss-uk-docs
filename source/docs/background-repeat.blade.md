@@ -49,10 +49,10 @@ features:
 Use `.bg-repeat` to repeat the background image both vertically and horizontally.
 
 @component('_partials.code-sample')
-<div class="w-full bg-gray-400 h-48 bg-center bg-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @slot('code')
-<div class="bg-repeat bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-repeat bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -61,10 +61,10 @@ Use `.bg-repeat` to repeat the background image both vertically and horizontally
 Use `.bg-no-repeat` when you don't want to repeat the background image.
 
 @component('_partials.code-sample')
-<div class="w-full bg-gray-400 h-48 bg-center bg-no-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-no-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @slot('code')
-<div class="bg-no-repeat bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-no-repeat bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -73,10 +73,10 @@ Use `.bg-no-repeat` when you don't want to repeat the background image.
 Use `.bg-repeat-x` to repeat the background image only horizontally.
 
 @component('_partials.code-sample')
-<div class="w-full bg-gray-400 h-48 bg-center bg-repeat-x" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-repeat-x" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @slot('code')
-<div class="bg-repeat-x bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-repeat-x bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -85,10 +85,10 @@ Use `.bg-repeat-x` to repeat the background image only horizontally.
 Use `.bg-repeat-y` to repeat the background image only vertically.
 
 @component('_partials.code-sample')
-<div class="w-full bg-gray-400 h-48 bg-center bg-repeat-y" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-repeat-y" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @slot('code')
-<div class="bg-repeat-y bg-center ..." style="background-image: url(...)"></div>
+<div class="bg-repeat-y bg-centre ..." style="background-image: url(...)"></div>
 @endslot
 @endcomponent
 
@@ -100,27 +100,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="w-full bg-gray-400 h-48 bg-center bg-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @endslot
 
 @slot('sm')
-<div class="w-full bg-gray-400 h-48 bg-center bg-no-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-no-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @endslot
 
 @slot('md')
-<div class="w-full bg-gray-400 h-48 bg-center bg-repeat-x" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-repeat-x" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @endslot
 
 @slot('lg')
-<div class="w-full bg-gray-400 h-48 bg-center bg-repeat-y" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-repeat-y" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @endslot
 
 @slot('xl')
-<div class="w-full bg-gray-400 h-48 bg-center bg-no-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
+<div class="w-full bg-grey-400 h-48 bg-centre bg-no-repeat" style="background-image:url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&q=80');">
 </div>
 @endslot
 

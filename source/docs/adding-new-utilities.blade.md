@@ -7,7 +7,7 @@ titleBorder: true
 
 Although Tailwind provides a pretty comprehensive set of utility classes out of the box, you may run into situations where you need to add a few of your own.
 
-Deciding on the best way to extend a framework can be paralyzing, so here are some best practices to help you add your own utilities in the most idiomatic way possible.
+Deciding on the best way to extend a framework can be paralysing, so here are some best practises to help you add your own utilities in the most idiomatic way possible.
 
 ---
 

@@ -27,7 +27,7 @@ features:
 Use `.font-sans` to apply a web safe sans-serif font family:
 
 @component('_partials.code-sample')
-<p class="font-sans text-lg text-gray-800 text-center">
+<p class="font-sans text-lg text-grey-800 text-centre">
   I'm a sans-serif paragraph.
 </p>
 @endcomponent
@@ -37,7 +37,7 @@ Use `.font-sans` to apply a web safe sans-serif font family:
 Use `.font-serif` to apply a web safe serif font family:
 
 @component('_partials.code-sample')
-<p class="font-serif text-lg text-gray-800 text-center">
+<p class="font-serif text-lg text-grey-800 text-centre">
   I'm a serif paragraph.
 </p>
 @endcomponent
@@ -47,7 +47,7 @@ Use `.font-serif` to apply a web safe serif font family:
 Use `.font-mono` to apply a web safe monospaced font family:
 
 @component('_partials.code-sample')
-<p class="font-mono text-lg text-gray-800 text-center">
+<p class="font-mono text-lg text-grey-800 text-centre">
   I'm a monospaced paragraph.
 </p>
 @endcomponent
@@ -60,27 +60,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="font-sans text-lg text-gray-800 text-center">
+<p class="font-sans text-lg text-grey-800 text-centre">
   I'm a paragraph.
 </p>
 @endslot
 @slot('sm')
-<p class="font-serif text-lg text-gray-800 text-center">
+<p class="font-serif text-lg text-grey-800 text-centre">
   I'm a paragraph.
 </p>
 @endslot
 @slot('md')
-<p class="font-mono text-lg text-gray-800 text-center">
+<p class="font-mono text-lg text-grey-800 text-centre">
   I'm a paragraph.
 </p>
 @endslot
 @slot('lg')
-<p class="font-sans text-lg text-gray-800 text-center">
+<p class="font-sans text-lg text-grey-800 text-centre">
   I'm a paragraph.
 </p>
 @endslot
 @slot('xl')
-<p class="font-serif text-lg text-gray-800 text-center">
+<p class="font-serif text-lg text-grey-800 text-centre">
   I'm a paragraph.
 </p>
 @endslot
@@ -97,7 +97,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides three font family utilities: a cross-browser sans-serif stack, a cross-browser serif stack, and a cross-browser monospaced stack. You can change, add, or remove these by editing the `theme.fontFamily` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.fontFamily'])
+@component('_partials.customised-config', ['key' => 'theme.fontFamily'])
 - 'sans': ['-apple-system', 'BlinkMacSystemFont', ...],
 - 'serif': ['Georgia', 'Cambria', ...],
 - 'mono': ['SFMono-Regular', 'Menlo', ...],

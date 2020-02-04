@@ -65,40 +65,40 @@ Control the font weight of an element using the `.font-{weight}` utilities.
 
 @component('_partials.code-sample', ['class' => 'font-sans'])
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-hairline</p>
-  <p class="font-hairline text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-hairline</p>
+  <p class="font-hairline text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-thin</p>
-  <p class="font-thin text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-thin</p>
+  <p class="font-thin text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-light</p>
-  <p class="font-light text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-light</p>
+  <p class="font-light text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-normal</p>
-  <p class="font-normal text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-normal</p>
+  <p class="font-normal text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-medium</p>
-  <p class="font-medium text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-medium</p>
+  <p class="font-medium text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-semibold</p>
-  <p class="font-semibold text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-semibold</p>
+  <p class="font-semibold text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-bold</p>
-  <p class="font-bold text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-bold</p>
+  <p class="font-bold text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.font-extrabold</p>
-  <p class="font-extrabold text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-extrabold</p>
+  <p class="font-extrabold text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 <div>
-  <p class="text-sm text-gray-600">.font-black</p>
-  <p class="font-black text-xl text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+  <p class="text-sm text-grey-600">.font-black</p>
+  <p class="font-black text-xl text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 </div>
 @slot('code')
 <p class="font-hairline ...">The quick brown fox ...</p>
@@ -121,19 +121,19 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample', ['class' => 'font-sans'])
 @slot('none')
-<p class="font-normal text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="font-normal text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('sm')
-<p class="font-bold text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="font-bold text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('md')
-<p class="font-thin text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="font-thin text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('lg')
-<p class="font-semibold text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="font-semibold text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('xl')
-<p class="font-black text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="font-black text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('code')
 <p class="none:font-normal sm:font-bold md:font-thin lg:font-semibold xl:font-black ...">The quick brown fox jumped over the lazy dog.</p>
@@ -145,7 +145,7 @@ For more information about Tailwind's responsive design features, check out the 
 To control the font weight of an element on hover, add the `hover:` prefix to any existing style and decoration utility. For example, use `hover:font-bold` to apply the `font-bold` utility on hover.
 
 @component('_partials.code-sample')
-<div class="text-center text-blue-700">
+<div class="text-centre text-blue-700">
   <a href="#" class="font-normal hover:font-bold">Hover over this link</a>
 </div>
 @endcomponent
@@ -162,7 +162,7 @@ To control the font weight of an element on focus, add the `focus:` prefix to an
 
 @component('_partials.code-sample', ['lang' => 'html'])
 <div class="max-w-xs w-full mx-auto">
-  <input class="bg-white font-normal focus:font-bold focus:shadow-outline text-gray-900 appearance-none inline-block w-full text-gray-900 border rounded py-3 px-4 focus:outline-none" value="Focus me" placeholder="Focus me">
+  <input class="bg-white font-normal focus:font-bold focus:shadow-outline text-grey-900 appearance-none inline-block w-full text-grey-900 border rounded py-3 px-4 focus:outline-none" value="Focus me" placeholder="Focus me">
 </div>
 
 @slot('code')
@@ -182,7 +182,7 @@ Focus utilities can also be combined with responsive utilities by adding the res
 
 By default Tailwind provides 10 `font-weight` utilities. You change, add, or remove these by editing the `theme.fontWeight` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.fontWeight'])
+@component('_partials.customised-config', ['key' => 'theme.fontWeight'])
 - hairline: 100,
 + 'extra-light': 100,
 - thin: 200,

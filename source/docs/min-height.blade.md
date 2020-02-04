@@ -35,8 +35,8 @@ features:
 Set the minimum height of an element using the `min-h-0`, `min-h-full`, or `min-h-screen` utilities.
 
 @component('_partials.code-sample')
-<div class="h-48 p-6 bg-gray-300">
-  <div class="h-24 min-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-48 p-6 bg-grey-300">
+  <div class="h-24 min-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>min-h-full</span>
   </div>
 </div>
@@ -59,36 +59,36 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="h-48 p-6 bg-gray-300">
-  <div class="h-24 min-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-48 p-6 bg-grey-300">
+  <div class="h-24 min-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('sm')
-<div class="h-48 p-6 bg-gray-300">
-  <div class="h-24 min-h-0 p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-48 p-6 bg-grey-300">
+  <div class="h-24 min-h-0 p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('md')
-<div class="h-48 p-6 bg-gray-300">
-  <div class="h-24 min-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-48 p-6 bg-grey-300">
+  <div class="h-24 min-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('lg')
-<div class="h-48 p-6 bg-gray-300">
-  <div class="h-24 min-h-0 p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-48 p-6 bg-grey-300">
+  <div class="h-24 min-h-0 p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
 @endslot
 @slot('xl')
-<div class="h-48 p-6 bg-gray-300">
-  <div class="h-24 min-h-full p-6 bg-gray-400 flex items-center justify-center">
+<div class="h-48 p-6 bg-grey-300">
+  <div class="h-24 min-h-full p-6 bg-grey-400 flex items-centre justify-centre">
     <span>Target</span>
   </div>
 </div>
@@ -110,7 +110,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 Customize Tailwind's default min-height scale in the `theme.minHeight` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.minHeight'])
+@component('_partials.customised-config', ['key' => 'theme.minHeight'])
 + '0': '0',
 + '1/4': '25%',
 + '1/2': '50%',
@@ -118,7 +118,7 @@ Customize Tailwind's default min-height scale in the `theme.minHeight` section o
 + 'full': '100%',
 @endcomponent
 
-Learn more about customizing the default theme in the [theme customization documentation](/docs/theme#customizing-the-default-theme).
+Learn more about customising the default theme in the [theme customization documentation](/docs/theme#customising-the-default-theme).
 
 @include('_partials.variants-and-disabling', [
     'utility' => [

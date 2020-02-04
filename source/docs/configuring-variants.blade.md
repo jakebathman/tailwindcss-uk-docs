@@ -87,28 +87,28 @@ module.exports = {
 ```css
 /* Generated CSS */
 
-.bg-black { background-color: #000 }
-.bg-white { background-color: #fff }
+.bg-black { background-colour: #000 }
+.bg-white { background-colour: #fff }
 /* ... */
 
-.hover\:bg-black:hover { background-color: #000 }
-.hover\:bg-white:hover { background-color: #fff }
+.hover\:bg-black:hover { background-colour: #000 }
+.hover\:bg-white:hover { background-colour: #fff }
 /* ... */
 
-.focus\:bg-black:focus { background-color: #000 }
-.focus\:bg-white:focus { background-color: #fff }
+.focus\:bg-black:focus { background-colour: #000 }
+.focus\:bg-white:focus { background-colour: #fff }
 /* ... */
 
-.border-black { border-color: #000 }
-.border-white { border-color: #fff }
+.border-black { border-colour: #000 }
+.border-white { border-colour: #fff }
 /* ... */
 
-.focus\:border-black:focus { border-color: #000 }
-.focus\:border-white:focus { border-color: #fff }
+.focus\:border-black:focus { border-colour: #000 }
+.focus\:border-white:focus { border-colour: #fff }
 /* ... */
 
-.hover\:border-black:hover { border-color: #000 }
-.hover\:border-white:hover { border-color: #fff }
+.hover\:border-black:hover { border-colour: #000 }
+.hover\:border-white:hover { border-colour: #fff }
 /* ... */
 ```
 
@@ -145,67 +145,67 @@ module.exports = {
 ```css
 /* Generated CSS */
 
-.bg-black { background-color: #000 }
+.bg-black { background-colour: #000 }
 /* ... */
-.hover\:bg-black:hover { background-color: #000 }
+.hover\:bg-black:hover { background-colour: #000 }
 /* ... */
 
-.border-black { border-color: #000 }
+.border-black { border-colour: #000 }
 /* ... */
-.focus\:border-black:focus { border-color: #000 }
+.focus\:border-black:focus { border-colour: #000 }
 /* ... */
 
 
 @media (min-width: 640px) {
-  .sm\:bg-black { background-color: #000 }
+  .sm\:bg-black { background-colour: #000 }
   /* ... */
-  .sm\:hover\:bg-black:hover { background-color: #000 }
+  .sm\:hover\:bg-black:hover { background-colour: #000 }
   /* ... */
 
-  .sm\:border-black { border-color: #000 }
+  .sm\:border-black { border-colour: #000 }
   /* ... */
-  .sm\:focus\:border-black:focus { border-color: #000 }
+  .sm\:focus\:border-black:focus { border-colour: #000 }
   /* ... */
 }
 
 @media (min-width: 768px) {
-  .md\:bg-black { background-color: #000 }
+  .md\:bg-black { background-colour: #000 }
   /* ... */
-  .md\:hover\:bg-black:hover { background-color: #000 }
+  .md\:hover\:bg-black:hover { background-colour: #000 }
   /* ... */
 
-  .md\:border-black { border-color: #000 }
+  .md\:border-black { border-colour: #000 }
   /* ... */
-  .md\:focus\:border-black:focus { border-color: #000 }
+  .md\:focus\:border-black:focus { border-colour: #000 }
   /* ... */
 }
 
 @media (min-width: 1024px) {
-  .lg\:bg-black { background-color: #000 }
+  .lg\:bg-black { background-colour: #000 }
   /* ... */
-  .lg\:hover\:bg-black:hover { background-color: #000 }
+  .lg\:hover\:bg-black:hover { background-colour: #000 }
   /* ... */
 
-  .lg\:border-black { border-color: #000 }
+  .lg\:border-black { border-colour: #000 }
   /* ... */
-  .lg\:focus\:border-black:focus { border-color: #000 }
+  .lg\:focus\:border-black:focus { border-colour: #000 }
   /* ... */
 }
 
 @media (min-width: 1280px) {
-  .xl\:bg-black { background-color: #000 }
+  .xl\:bg-black { background-colour: #000 }
   /* ... */
-  .xl\:hover\:bg-black:hover { background-color: #000 }
+  .xl\:hover\:bg-black:hover { background-colour: #000 }
   /* ... */
 
-  .xl\:border-black { border-color: #000 }
+  .xl\:border-black { border-colour: #000 }
   /* ... */
-  .xl\:focus\:border-black:focus { border-color: #000 }
+  .xl\:focus\:border-black:focus { border-colour: #000 }
   /* ... */
 }
 ```
 
-**Responsive variants are grouped together and inserted at the end of your stylesheet** by default to avoid specificity issues. If you'd like to customize this behavior for whatever reason, you can use the [@@tailwind screens](/docs/functions-and-directives#tailwind) directive to specify where responsive variants should be inserted.
+**Responsive variants are grouped together and inserted at the end of your stylesheet** by default to avoid specificity issues. If you'd like to customise this behaviour for whatever reason, you can use the [@@tailwind screens](/docs/functions-and-directives#tailwind) directive to specify where responsive variants should be inserted.
 
 ### The default variant
 
@@ -223,16 +223,16 @@ module.exports = {
 ```css
 /* Generated CSS */
 
-.hover\:bg-black:hover { background-color: #000 }
-.hover\:bg-white:hover { background-color: #fff }
+.hover\:bg-black:hover { background-colour: #000 }
+.hover\:bg-white:hover { background-colour: #fff }
 /* ... */
 
-.bg-black { background-color: #000 }
-.bg-white { background-color: #fff }
+.bg-black { background-colour: #000 }
+.bg-white { background-colour: #fff }
 /* ... */
 
-.focus\:bg-black:focus { background-color: #000 }
-.focus\:bg-white:focus { background-color: #fff }
+.focus\:bg-black:focus { background-colour: #000 }
+.focus\:bg-white:focus { background-colour: #fff }
 /* ... */
 ```
 
@@ -250,19 +250,19 @@ module.exports = {
 ```css
 /* Generated CSS */
 
-.children\:bg-black > * { background-color: #000; }
-.children\:bg-black > * { background-color: #000; }
+.children\:bg-black > * { background-colour: #000; }
+.children\:bg-black > * { background-colour: #000; }
 
-.bg-black { background-color: #000 }
-.bg-white { background-color: #fff }
+.bg-black { background-colour: #000 }
+.bg-white { background-colour: #fff }
 /* ... */
 
-.hover\:bg-black:hover { background-color: #000 }
-.hover\:bg-white:hover { background-color: #fff }
+.hover\:bg-black:hover { background-colour: #000 }
+.hover\:bg-white:hover { background-colour: #fff }
 /* ... */
 
-.focus\:bg-black:focus { background-color: #000 }
-.focus\:bg-white:focus { background-color: #fff }
+.focus\:bg-black:focus { background-colour: #000 }
+.focus\:bg-white:focus { background-colour: #fff }
 /* ... */
 ```
 

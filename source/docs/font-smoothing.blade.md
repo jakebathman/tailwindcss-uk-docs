@@ -29,7 +29,7 @@ features:
 Use the `.subpixel-antialiased` utility to render text using subpixel antialiasing.
 
 @component('_partials.code-sample')
-<p class="subpixel-antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="subpixel-antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="subpixel-antialiased ...">The quick brown fox ...</p>
 @endslot
@@ -40,7 +40,7 @@ Use the `.subpixel-antialiased` utility to render text using subpixel antialiasi
 Use the `.antialiased` utility to render text using grayscale antialiasing.
 
 @component('_partials.code-sample')
-<p class="antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="antialiased ...">The quick brown fox ...</p>
 @endslot
@@ -54,19 +54,19 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('sm')
-<p class="subpixel-antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="subpixel-antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('md')
-<p class="antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('lg')
-<p class="subpixel-antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="subpixel-antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('xl')
-<p class="antialiased text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="antialiased text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('code')
 <p class="none:antialiased sm:subpixel-antialiased md:antialiased lg:subpixel-antialiased xl:antialiased ...">

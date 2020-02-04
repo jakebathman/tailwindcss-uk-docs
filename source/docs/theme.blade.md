@@ -5,7 +5,7 @@ description: "Customizing the default theme for your project."
 titleBorder: true
 ---
 
-The `theme` section of your `tailwind.config.js` file is where you define your project's color palette, type scale, font stacks, breakpoints, border radius values, and more.
+The `theme` section of your `tailwind.config.js` file is where you define your project's colour palette, type scale, font stacks, breakpoints, border radius values, and more.
 
 ```js
 // tailwind.config.js
@@ -28,7 +28,7 @@ module.exports = {
       '4': '4px',
     },
     extend: {
-      colors: {
+      colours: {
         cyan: '#9cdbff',
       },
       spacing: {
@@ -40,17 +40,17 @@ module.exports = {
 }
 ```
 
-We provide a sensible [default theme](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js#L5) with a very generous set of values to get you started, but don't be afraid to change it or extend; you're encouraged to customize it as much as you need to to fit the goals of your design.
+We provide a sensible [default theme](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js#L5) with a very generous set of values to get you started, but don't be afraid to change it or extend; you're encouraged to customise it as much as you need to to fit the goals of your design.
 
 ## Theme structure
 
-The `theme` object contains keys for `screens`, `colors`, and `spacing`, as well as a key for each customizable [core plugin](/docs/core-plugins).
+The `theme` object contains keys for `screens`, `colours`, and `spacing`, as well as a key for each customizable [core plugin](/docs/core-plugins).
 
 See the [theme configuration reference](#configuration-reference) or the [default theme](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js#L5) for a complete list of theme options.
 
 ### Screens
 
-The `screens` key allows you to customize the responsive breakpoints in your project.
+The `screens` key allows you to customise the responsive breakpoints in your project.
 
 ```js
 // tailwind.config.js
@@ -70,17 +70,17 @@ To learn more, see the [breakpoint customization documentation](/docs/breakpoint
 
 ### Colors
 
-The `colors` key allows you to customize the global color palette for your project.
+The `colours` key allows you to customise the global colour palette for your project.
 
 ```js
 // tailwind.config.js
 module.exports = {
   theme: {
-    colors: {
+    colours: {
       transparent: 'transparent',
       black: '#000',
       white: '#fff',
-      gray: {
+      grey: {
         100: '#f7fafc',
         // ...
         900: '#1a202c',
@@ -92,13 +92,13 @@ module.exports = {
 }
 ```
 
-By default, these colors are inherited by the `backgroundColor`, `textColor`, and `borderColor` core plugins.
+By default, these colours are inherited by the `backgroundColor`, `textColor`, and `borderColor` core plugins.
 
-To learn more, see the [color customization documentation](/docs/colors).
+To learn more, see the [colour customization documentation](/docs/colours).
 
 ### Spacing
 
-The `spacing` key allows you to customize the global spacing and sizing scale for your project.
+The `spacing` key allows you to customise the global spacing and sizing scale for your project.
 
 ```js
 // tailwind.config.js
@@ -131,13 +131,13 @@ module.exports = {
 
 By default, these values are inherited by the `padding`, `margin`, `negativeMargin`, `width`, and `height` core plugins.
 
-To learn more, see the [spacing customization documentation](/docs/customizing-spacing).
+To learn more, see the [spacing customization documentation](/docs/customising-spacing).
 
 ### Core plugins
 
 The rest of the `theme` section is used to configure which values are available for each individual core plugin.
 
-For example, the `borderRadius` key lets you customize which border radius utilities will be generated:
+For example, the `borderRadius` key lets you customise which border radius utilities will be generated:
 
 ```js
 module.exports = {
@@ -167,13 +167,13 @@ The example `borderRadius` configuration above would generate the following CSS 
 
 You'll notice that using a key of `default` in the theme configuration created the class `rounded` with no suffix. This is a common convention in Tailwind supported by many (although not all) of the core plugins.
 
-To learn more about customizing a specific core plugin, visit the documentation for that plugin.
+To learn more about customising a specific core plugin, visit the documentation for that plugin.
 
 For a complete reference of available theme properties and their default values, [see the default theme configuration](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js#L5).
 
 ## Customizing the default theme
 
-Out of the box, your project will automatically inherit the values from [the default theme configuration](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js#L5). If you would like to customize the default theme, you have a few different options depending on your goals.
+Out of the box, your project will automatically inherit the values from [the default theme configuration](https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js#L5). If you would like to customise the default theme, you have a few different options depending on your goals.
 
 ### Overriding the default theme
 
@@ -198,7 +198,7 @@ module.exports = {
 
 This will completely replace Tailwind's default configuration for that key, so in the example above none of the default opacity utilities would be generated.
 
-Any keys you **do not** provide will be inherited from the default theme, so in the above example, the default theme configuration for things like colors, spacing, border radius, background position, etc. would be preserved.
+Any keys you **do not** provide will be inherited from the default theme, so in the above example, the default theme configuration for things like colours, spacing, border radius, background position, etc. would be preserved.
 
 ### Extending the default theme
 
@@ -247,16 +247,16 @@ module.exports = {
 
 If you need to reference another value in your theme, you can do so by providing a closure instead of a static value. The closure will receive a `theme()` function that you can use to look up other values in your theme using dot notation.
 
-For example, you could generate `fill` utilities for every color in your color palette by referencing `theme('colors')` in your `fill` configuration:
+For example, you could generate `fill` utilities for every colour in your colour palette by referencing `theme('colours')` in your `fill` configuration:
 
 ```js
 // tailwind.config.js
 module.exports = {
   theme: {
-    colors: {
+    colours: {
       // ...
     },
-    fill: theme => theme('colors')
+    fill: theme => theme('colours')
   }
 }
 ```
@@ -331,7 +331,7 @@ module.exports = {
   theme: {
     positions: {
       bottom: 'bottom',
-      center: 'center',
+      centre: 'centre',
       left: 'left',
       'left-bottom': 'left bottom',
       'left-top': 'left top',
@@ -353,8 +353,8 @@ Another example is adding a new key to reference inside a custom plugin. For exa
 module.exports = {
   theme: {
     gradients: theme => ({
-      'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
-      'purple-blue': [theme('colors.purple.500'), theme('colors.blue.500')],
+      'blue-green': [theme('colours.blue.500'), theme('colours.green.500')],
+      'purple-blue': [theme('colours.purple.500'), theme('colours.blue.500')],
       // ...
     })
   },
@@ -368,20 +368,20 @@ Since the entire `theme` object is available in your CSS using the [theme functi
 
 ## Configuration reference
 
-Except for `screens`, `colors`, and `spacing`, all of the keys in the `theme` object map to one of Tailwind's [core plugins](/docs/core-plugins). Since many plugins are responsible for CSS properties that only accept a static set of values (like `float` for example), note that not every plugin has a corresponding key in the `theme` object.
+Except for `screens`, `colours`, and `spacing`, all of the keys in the `theme` object map to one of Tailwind's [core plugins](/docs/core-plugins). Since many plugins are responsible for CSS properties that only accept a static set of values (like `float` for example), note that not every plugin has a corresponding key in the `theme` object.
 
 All of these keys are also available under the `theme.extend` key to enable [extending the default theme](#extending-the-default-theme).
 
 | Key | Description |
 | --- | --- |
 | `screens` | Your project's responsive breakpoints |
-| `colors` | Your project's color palette |
+| `colours` | Your project's colour palette |
 | `spacing` | Your project's spacing scale |
 | `container` | Configuration for the `container` plugin |
-| `backgroundColor` | Values for the `background-color` property |
+| `backgroundColor` | Values for the `background-colour` property |
 | `backgroundPosition` | Values for the `background-position` property |
 | `backgroundSize` | Values for the `background-size` property |
-| `borderColor` | Values for the `border-color` property |
+| `borderColor` | Values for the `border-colour` property |
 | `borderRadius` | Values for the `border-radius` property |
 | `borderStyle` | Values for the `border-style` property |
 | `borderWidth` | Values for the `border-width` property |
@@ -409,7 +409,7 @@ All of these keys are also available under the `theme.extend` key to enable [ext
 | `opacity` | Values for the `opacity` property |
 | `padding` | Values for the `padding` property |
 | `stroke` | Values for the `stroke` property |
-| `textColor` | Values for the `text-color` property |
+| `textColor` | Values for the `text-colour` property |
 | `width` | Values for the `width` property |
 | `zIndex` | Values for the `z-index` property |
 

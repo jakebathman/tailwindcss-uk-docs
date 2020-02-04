@@ -88,7 +88,7 @@ module.exports = {
 }
 ```
 
-If necessary, you can opt out of this behavior by passing an options object as a second parameter to `addUtilities`:
+If necessary, you can opt out of this behaviour by passing an options object as a second parameter to `addUtilities`:
 
 ```js
 // tailwind.config.js
@@ -189,14 +189,14 @@ module.exports = {
         },
         '.btn-blue': {
           backgroundColor: '#3490dc',
-          color: '#fff',
+          colour: '#fff',
           '&:hover': {
             backgroundColor: '#2779bd'
           },
         },
         '.btn-red': {
           backgroundColor: '#e3342f',
-          color: '#fff',
+          colour: '#fff',
           '&:hover': {
             backgroundColor: '#cc1f1a'
           },
@@ -233,18 +233,18 @@ module.exports = {
   font-weight: 600;
 }
 .tw-btn-blue {
-  background-color: #3490dc;
-  color: #fff;
+  background-colour: #3490dc;
+  colour: #fff;
 }
 .tw-btn-blue:hover {
-  background-color: #2779bd;
+  background-colour: #2779bd;
 }
 .tw-btn-blue {
-  background-color: #e3342f;
-  color: #fff;
+  background-colour: #e3342f;
+  colour: #fff;
 }
 .tw-btn-blue:hover {
-  background-color: #cc1f1a;
+  background-colour: #cc1f1a;
 }
 ```
 
@@ -281,7 +281,7 @@ module.exports = {
       const components = {
         // ...
         '.navbar-inverse a.nav-link': {
-            color: '#fff',
+            colour: '#fff',
         }
       }
 
@@ -295,7 +295,7 @@ module.exports = {
 
 ```css
 .tw-navbar-inverse a.tw-nav-link {
-    color: #fff;
+    colour: #fff;
 }
 ```
 
@@ -461,7 +461,7 @@ This would generate the following CSS:
 
 ```css
 .existing-class > .tw-new-class {
-  background-color: #fff;
+  background-colour: #fff;
 }
 ```
 
@@ -556,7 +556,7 @@ module.exports = {
 
 ## Exposing options
 
-It often makes sense for a plugin to expose its own options that the user can configure to customize the plugin's behavior.
+It often makes sense for a plugin to expose its own options that the user can configure to customise the plugin's behaviour.
 
 The best way to accomplish this is to claim your own key in the user's `theme` and `variants` configuration and ask them to provide any options there so you can access them with the `theme` and `variants` functions.
 
@@ -587,8 +587,8 @@ To use it, you'd `require` it in your plugins list, specifying your configuratio
 module.exports = {
   theme: {
     gradients: theme => ({
-      'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
-      'purple-blue': [theme('colors.purple.500'), theme('colors.blue.500')],
+      'blue-green': [theme('colours.blue.500'), theme('colours.green.500')],
+      'purple-blue': [theme('colours.purple.500'), theme('colours.blue.500')],
       // ...
     })
   },
@@ -605,13 +605,13 @@ module.exports = {
 
 ## CSS-in-JS syntax
 
-Each of `addUtilities`, `addComponents`, and `addBase` expect CSS rules written as JavaScript objects. Tailwind uses the same sort of syntax you might recognize from CSS-in-JS libraries like [Emotion](https://emotion.sh/docs/object-styles), and is powered by [postcss-js](https://github.com/postcss/postcss-js) under the hood.
+Each of `addUtilities`, `addComponents`, and `addBase` expect CSS rules written as JavaScript objects. Tailwind uses the same sort of syntax you might recognise from CSS-in-JS libraries like [Emotion](https://emotion.sh/docs/object-styles), and is powered by [postcss-js](https://github.com/postcss/postcss-js) under the hood.
 
 Consider this simple CSS rule:
 
 ```css
 .card {
-  background-color: #fff;
+  background-colour: #fff;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
@@ -622,7 +622,7 @@ Translating this to a CSS-in-JS object would look like this:
 ```js
 addComponents({
   '.card': {
-    'background-color': '#fff',
+    'background-colour': '#fff',
     'border-radius': '.25rem',
     'box-shadow': '0 2px 4px rgba(0,0,0,0.2)',
   }
@@ -670,14 +670,14 @@ addComponents({
   },
   '.btn-blue': {
     backgroundColor: '#3490dc',
-    color: '#fff',
+    colour: '#fff',
     '&:hover': {
       backgroundColor: '#2779bd'
     },
   },
   '.btn-red': {
     backgroundColor: '#e3342f',
-    color: '#fff',
+    colour: '#fff',
     '&:hover': {
       backgroundColor: '#cc1f1a'
     },

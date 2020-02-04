@@ -74,10 +74,10 @@ description: "Utilities for controlling the order of flex items."
 Use `.order-{order}` to render flex items in a different order than they appear in the DOM.
 
 @component('_partials.code-sample')
-<div class="flex bg-gray-200">
-  <div class="order-last text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex bg-grey-200">
+  <div class="order-last text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @slot('code')
 <div class="flex">
@@ -97,48 +97,48 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="flex bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="order-first text-gray-700 text-center bg-white px-4 py-2 m-2">3</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">4</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">5</div>
+<div class="flex bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="order-first text-grey-700 text-centre bg-white px-4 py-2 m-2">3</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">4</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">5</div>
 </div>
 @endslot
 @slot('sm')
-<div class="flex bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="order-last text-gray-700 text-center bg-white px-4 py-2 m-2">3</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">4</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">5</div>
+<div class="flex bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="order-last text-grey-700 text-centre bg-white px-4 py-2 m-2">3</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">4</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">5</div>
 </div>
 @endslot
 @slot('md')
-<div class="flex bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="order-none text-gray-700 text-center bg-white px-4 py-2 m-2">3</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">4</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">5</div>
+<div class="flex bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="order-none text-grey-700 text-centre bg-white px-4 py-2 m-2">3</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">4</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">5</div>
 </div>
 @endslot
 @slot('lg')
-<div class="flex bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="order-first text-gray-700 text-center bg-white px-4 py-2 m-2">3</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">4</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">5</div>
+<div class="flex bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="order-first text-grey-700 text-centre bg-white px-4 py-2 m-2">3</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">4</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">5</div>
 </div>
 @endslot
 @slot('xl')
-<div class="flex bg-gray-200">
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="order-last text-gray-700 text-center bg-white px-4 py-2 m-2">3</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">4</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">5</div>
+<div class="flex bg-grey-200">
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="order-last text-grey-700 text-centre bg-white px-4 py-2 m-2">3</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">4</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">5</div>
 </div>
 @endslot
 @slot('code')
@@ -156,7 +156,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides utilities for `order-first`, `order-last`, `order-none`, and an `order-{number}` utility for the numbers 1 through 12. You change, add, or remove these by editing the `theme.order` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.order'])
+@component('_partials.customised-config', ['key' => 'theme.order'])
   first: '-9999',
   last: '9999',
 - none: '0',

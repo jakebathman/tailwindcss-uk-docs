@@ -25,8 +25,8 @@ Control the line height of an element using the `.leading-{size}` utilities.
 @component('_partials.code-sample')
 @foreach ($page->config['theme']['lineHeight'] as $name => $value)
 <div @if(!$loop->last) class="mb-6" @endif>
-  <p class="text-sm text-gray-600">.leading-{{ $name }}</p>
-  <p class="leading-{{ $name }} text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+  <p class="text-sm text-grey-600">.leading-{{ $name }}</p>
+  <p class="leading-{{ $name }} text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 </div>
 @endforeach
 @slot('code')
@@ -44,19 +44,19 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="leading-none text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="leading-none text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('sm')
-<p class="leading-tight text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="leading-tight text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('md')
-<p class="leading-normal text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="leading-normal text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('lg')
-<p class="leading-relaxed text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="leading-relaxed text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('xl')
-<p class="leading-loose text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
+<p class="leading-loose text-grey-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, quia temporibus eveniet a libero incidunt suscipit laborum, rerum accusantium modi quidem, ipsam illum quis sed voluptatum quae eum fugit earum.</p>
 @endslot
 @slot('code')
 <p class="none:leading-none sm:leading-tight md:leading-normal lg:leading-relaxed xl:leading-loose ...">Lorem ipsum dolor sit amet ...</p>
@@ -69,7 +69,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides six `line-height` utilities. You change, add, or remove these by editing the `theme.lineHeight` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.lineHeight'])
+@component('_partials.customised-config', ['key' => 'theme.lineHeight'])
   none: 1,
   tight: 1.25,
 - snug: 1.375,

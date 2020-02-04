@@ -34,7 +34,7 @@ description: "Utilities for controlling word breaks in an element."
 Use `.break-normal` to only add line breaks at normal word break points.
 
 @component('_partials.code-sample')
-<p class="break-normal max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-normal max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @slot('code')
@@ -47,7 +47,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpr
 Use `.break-words` to add line breaks mid-word if needed.
 
 @component('_partials.code-sample')
-<p class="break-words max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-words max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @slot('code')
@@ -60,7 +60,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpr
 Use `.break-all` to add line breaks whenever necessary, without trying to preserve whole words.
 
 @component('_partials.code-sample')
-<p class="break-all max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-all max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @slot('code')
@@ -73,7 +73,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpr
 Use `.truncate` to truncate overflowing text with an ellipsis (<code>…</code>) if needed.
 
 @component('_partials.code-sample')
-<p class="truncate max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="truncate max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @slot('code')
@@ -89,27 +89,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="break-normal max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-normal max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @endslot
 @slot('sm')
-<p class="break-words max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-words max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @endslot
 @slot('md')
-<p class="break-all max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-all max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @endslot
 @slot('lg')
-<p class="truncate max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="truncate max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @endslot
 @slot('xl')
-<p class="break-normal max-w-xs p-2 bg-gray-200 mx-auto">
+<p class="break-normal max-w-xs p-2 bg-grey-200 mx-auto">
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiisitaquequodpraesentiumexplicaboincidunt? Dolores beatae nam at sed dolorum ratione dolorem nisi velit cum.
 </p>
 @endslot

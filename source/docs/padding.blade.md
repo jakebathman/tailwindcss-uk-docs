@@ -39,26 +39,26 @@ For example, `pt-6` would add `1.5rem` of padding to the top of an element, `pr-
 @component('_partials.code-sample')
 <div class="flex justify-around items-start">
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">pt-8</p>
-    <div class="flex pt-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">pt-8</p>
+    <div class="flex pt-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">pr-8</p>
-    <div class="flex pr-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">pr-8</p>
+    <div class="flex pr-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">pb-8</p>
-    <div class="flex pb-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">pb-8</p>
+    <div class="flex pb-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">pl-8</p>
-    <div class="flex pl-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">pl-8</p>
+    <div class="flex pl-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
@@ -76,10 +76,10 @@ For example, `pt-6` would add `1.5rem` of padding to the top of an element, `pr-
 Control the horizontal padding of an element using the `px-{size}` utilities.
 
 @component('_partials.code-sample')
-<div class="flex justify-around items-center">
+<div class="flex justify-around items-centre">
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">px-8</p>
-    <div class="flex px-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">px-8</p>
+    <div class="flex px-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
@@ -94,10 +94,10 @@ Control the horizontal padding of an element using the `px-{size}` utilities.
 Control the vertical padding of an element using the `py-{size}` utilities.
 
 @component('_partials.code-sample')
-<div class="flex justify-around items-center">
+<div class="flex justify-around items-centre">
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">py-8</p>
-    <div class="flex py-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">py-8</p>
+    <div class="flex py-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
@@ -112,10 +112,10 @@ Control the vertical padding of an element using the `py-{size}` utilities.
 Control the padding on all sides of an element using the `p-{size}` utilities.
 
 @component('_partials.code-sample')
-<div class="flex justify-around items-center">
+<div class="flex justify-around items-centre">
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">p-8</p>
-    <div class="flex p-8 bg-gray-400">
+    <p class="text-centre text-sm text-grey-600 mb-1">p-8</p>
+    <div class="flex p-8 bg-grey-400">
       <span class="bg-yellow-200">Target</span>
     </div>
   </div>
@@ -133,33 +133,33 @@ To control the padding of an element at a specific breakpoint, add a `{screen}:`
 
 For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
 
-@component('_partials.responsive-code-sample', ['class' => 'text-center'])
+@component('_partials.responsive-code-sample', ['class' => 'text-centre'])
 @slot('none')
-<div class="inline-block bg-gray-400 pt-8">
+<div class="inline-block bg-grey-400 pt-8">
   <div class="bg-yellow-200">Target</div>
 </div>
 @endslot
 
 @slot('sm')
-<div class="inline-block bg-gray-400 pt-8 pr-6">
+<div class="inline-block bg-grey-400 pt-8 pr-6">
   <div class="bg-yellow-200">Target</div>
 </div>
 @endslot
 
 @slot('md')
-<div class="inline-block bg-gray-400 pt-8 pr-6 pb-4">
+<div class="inline-block bg-grey-400 pt-8 pr-6 pb-4">
   <div class="bg-yellow-200">Target</div>
 </div>
 @endslot
 
 @slot('lg')
-<div class="inline-block bg-gray-400 pt-8 pr-8 pb-4 pl-2">
+<div class="inline-block bg-grey-400 pt-8 pr-8 pb-4 pl-2">
   <div class="bg-yellow-200">Target</div>
 </div>
 @endslot
 
 @slot('xl')
-<div class="inline-block bg-gray-400 p-0">
+<div class="inline-block bg-grey-400 p-0">
   <div class="bg-yellow-200">Target</div>
 </div>
 @endslot
@@ -179,25 +179,25 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides 19 fixed padding utilities for each side and axis.
 
-If you'd like to customize these values for padding, margin, width, and height all at once, use the `theme.spacing` section of your `tailwind.config.js` file.
+If you'd like to customise these values for padding, margin, width, and height all at once, use the `theme.spacing` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.spacing'])
+@component('_partials.customised-config', ['key' => 'theme.spacing'])
 + sm: '8px',
 + md: '16px',
 + lg: '24px',
 + xl: '48px',
 @endcomponent
 
-To customize only the padding values, use the `theme.padding` section of your `tailwind.config.js` file.
+To customise only the padding values, use the `theme.padding` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.padding'])
+@component('_partials.customised-config', ['key' => 'theme.padding'])
 + sm: '8px',
 + md: '16px',
 + lg: '24px',
 + xl: '48px',
 @endcomponent
 
-Learn more about customizing the default theme in the [theme customization documentation](/docs/theme#customizing-the-default-theme).
+Learn more about customising the default theme in the [theme customization documentation](/docs/theme#customising-the-default-theme).
 
 
 @include('_partials.variants-and-disabling', [

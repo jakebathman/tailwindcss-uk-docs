@@ -34,7 +34,7 @@ features:
 Use the `.underline` utility to underline text.
 
 @component('_partials.code-sample')
-<p class="underline text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="underline text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="underline ...">The quick brown fox ...</p>
 @endslot
@@ -45,7 +45,7 @@ Use the `.underline` utility to underline text.
 Use the `.line-through` utility to strike out text.
 
 @component('_partials.code-sample')
-<p class="line-through text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="line-through text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="line-through ...">The quick brown fox ...</p>
 @endslot
@@ -56,7 +56,7 @@ Use the `.line-through` utility to strike out text.
 Use the `.no-underline` utility to remove underline or line-through styling.
 
 @component('_partials.code-sample')
-<div class="text-center">
+<div class="text-centre">
   <a href="#" class="no-underline text-blue-500 text-lg">Link with no underline</a>
 </div>
 @slot('code')
@@ -72,19 +72,19 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="underline text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="underline text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('sm')
-<p class="no-underline text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="no-underline text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('md')
-<p class="line-through text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="line-through text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('lg')
-<p class="underline text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="underline text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('xl')
-<p class="no-underline text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="no-underline text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('code')
 <p class="none:underline sm:no-underline md:line-through lg:underline xl:no-underline ...">
@@ -97,7 +97,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 To control the text decoration of an element on hover, add the `hover:` prefix to any existing text decoration utility. For example, use `hover:underline` to apply the `underline` utility on hover.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <a href="#hover" class="no-underline hover:underline text-blue-500 text-lg">Link</a>
 @endcomponent
 
@@ -113,7 +113,7 @@ To control the text decoration of an element on focus, add the `focus:` prefix t
 
 @component('_partials.code-sample', ['lang' => 'html'])
 <div class="max-w-xs w-full mx-auto">
-  <input class="bg-white focus:underline focus:shadow-outline text-gray-900 appearance-none inline-block w-full text-gray-900 border rounded py-3 px-4 focus:outline-none" value="Focus me" placeholder="Focus me">
+  <input class="bg-white focus:underline focus:shadow-outline text-grey-900 appearance-none inline-block w-full text-grey-900 border rounded py-3 px-4 focus:outline-none" value="Focus me" placeholder="Focus me">
 </div>
 
 @slot('code')

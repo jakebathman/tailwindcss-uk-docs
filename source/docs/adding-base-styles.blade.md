@@ -1,13 +1,13 @@
 ---
 extends: _layouts.documentation
 title: "Adding Base Styles"
-description: "Best practices for adding your own global base styles on top of Tailwind."
+description: "Best practises for adding your own global base styles on top of Tailwind."
 titleBorder: true
 ---
 
 Base (or global) styles are the styles at the beginning of a stylesheet that set useful defaults for basic HTML elements like `<a>` tags, headings, etc. or apply opinionated resets like the popular [box-sizing reset](https://www.paulirish.com/2012/box-sizing-border-box-ftw/).
 
-Tailwind includes a useful set of base styles out of the box that we call [Preflight](/docs/preflight), which is really just [normalize.css](https://github.com/necolas/normalize.css/) plus a thin layer of additional more opinionated styles.
+Tailwind includes a useful set of base styles out of the box that we call [Preflight](/docs/preflight), which is really just [normalise.css](https://github.com/necolas/normalise.css/) plus a thin layer of additional more opinionated styles.
 
 Preflight is a great starting point for most projects, but if you'd ever like to add your own additional base styles, here are some recommendations for doing it idiomatically.
 
@@ -19,9 +19,9 @@ If you just want to apply some global styling to the `html` or `body` elements, 
 
 ```html
 <!doctype html>
-<html lang="en" class="text-gray-900 antialiased leading-tight">
+<html lang="en" class="text-grey-900 antialiased leading-tight">
   <!-- ... -->
-  <body class="min-h-screen bg-gray-100">
+  <body class="min-h-screen bg-grey-100">
     <!-- ... -->
   </body>
 </html>
@@ -110,5 +110,5 @@ In general, it's simpler to add base styles to your project in CSS than it is to
 
 You should prefer a plugin if:
 
-- You want to publish your base styles publicly and make them easy for other users to install.
+- You want to publish your base styles publicly and make them easy for other users to instal.
 - You want to re-use your base styles across multiple projects in your company and prefer sharing JS dependencies instead of CSS dependencies.

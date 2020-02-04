@@ -23,7 +23,7 @@ features:
 
 Use `.appearance-none` to reset any browser specific styling on an element. This utility is often used when creating [custom Form components](/docs/examples/forms).
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <div class="max-w-sm mx-auto">
   <div class="flex my-4">
     <select class="w-16">

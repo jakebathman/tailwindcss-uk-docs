@@ -88,59 +88,59 @@ Combined with Tailwind's padding and margin utilities, you'll probably find that
 @component('_partials.code-sample')
 <div class="flex justify-around mb-8">
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.inset-x-0.top-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute inset-x-0 top-0 h-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.inset-x-0.top-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute inset-x-0 top-0 h-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.inset-y-0.right-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute inset-y-0 right-0 w-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.inset-y-0.right-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute inset-y-0 right-0 w-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.inset-x-0.bottom-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute inset-x-0 bottom-0 h-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.inset-x-0.bottom-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute inset-x-0 bottom-0 h-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.inset-y-0.left-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute inset-y-0 left-0 w-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.inset-y-0.left-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute inset-y-0 left-0 w-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.inset-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute inset-0 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.inset-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute inset-0 bg-grey-700"></div>
     </div>
   </div>
 </div>
 <div class="flex justify-around">
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.left-0.top-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute left-0 top-0 h-8 w-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.left-0.top-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute left-0 top-0 h-8 w-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.top-0.right-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute top-0 right-0 h-8 w-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.top-0.right-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute top-0 right-0 h-8 w-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.right-0.bottom-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute right-0 bottom-0 h-8 w-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.right-0.bottom-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute right-0 bottom-0 h-8 w-8 bg-grey-700"></div>
     </div>
   </div>
   <div>
-    <p class="text-center text-sm text-gray-600 mb-1">.bottom-0.left-0</p>
-    <div class="relative h-24 w-24 bg-gray-400">
-      <div class="absolute bottom-0 left-0 h-8 w-8 bg-gray-700"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.bottom-0.left-0</p>
+    <div class="relative h-24 w-24 bg-grey-400">
+      <div class="absolute bottom-0 left-0 h-8 w-8 bg-grey-700"></div>
     </div>
   </div>
   <div class="relative h-24 w-24 opacity-0"></div>
@@ -148,48 +148,48 @@ Combined with Tailwind's padding and margin utilities, you'll probably find that
 
 @slot('code')
 <!-- Span top edge -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute inset-x-0 top-0 h-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute inset-x-0 top-0 h-8 bg-grey-700"></div>
 </div>
 
 <!-- Span right edge -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute inset-y-0 right-0 w-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute inset-y-0 right-0 w-8 bg-grey-700"></div>
 </div>
 
 <!-- Span bottom edge -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute inset-x-0 bottom-0 h-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute inset-x-0 bottom-0 h-8 bg-grey-700"></div>
 </div>
 
 <!-- Span left edge -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute inset-y-0 left-0 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute inset-y-0 left-0 bg-grey-700"></div>
 </div>
 
 <!-- Fill entire parent -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute inset-0 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute inset-0 bg-grey-700"></div>
 </div>
 
 <!-- Pin to top left corner -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute left-0 top-0 h-8 w-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute left-0 top-0 h-8 w-8 bg-grey-700"></div>
 </div>
 
 <!-- Pin to top right corner -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute top-0 right-0 h-8 w-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute top-0 right-0 h-8 w-8 bg-grey-700"></div>
 </div>
 
 <!-- Pin to bottom right corner -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute bottom-0 right-0 h-8 w-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute bottom-0 right-0 h-8 w-8 bg-grey-700"></div>
 </div>
 
 <!-- Pin to bottom left corner -->
-<div class="relative h-24 w-24 bg-gray-400">
-  <div class="absolute bottom-0 left-0 h-8 w-8 bg-gray-700"></div>
+<div class="relative h-24 w-24 bg-grey-400">
+  <div class="absolute bottom-0 left-0 h-8 w-8 bg-grey-700"></div>
 </div>
 @endslot
 @endcomponent
@@ -202,37 +202,37 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute inset-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute inset-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('sm')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute bottom-0 left-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute bottom-0 left-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('md')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute top-0 inset-x-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute top-0 inset-x-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('lg')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute right-0 inset-y-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute right-0 inset-y-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('xl')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute bottom-0 inset-x-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute bottom-0 inset-x-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('code')
-<div class="relative h-32 bg-gray-400 p-4">
+<div class="relative h-32 bg-grey-400 p-4">
   <div class="none:absolute none:inset-0 sm:bottom-0 sm:left-0 md:top-0 md:inset-x-0 lg:right-0 lg:inset-y-0 xl:bottom-0 xl:inset-x-0"></div>
 </div>
 @endslot
@@ -244,7 +244,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind only provides `0` and `auto` top/right/bottom/left/inset utilities. You can change, add, or remove these by editing the `theme.inset` section of your `tailwind.config.js` file.
 
-@component('_partials.customized-config', ['key' => 'theme.inset'])
+@component('_partials.customised-config', ['key' => 'theme.inset'])
   '0': 0,
 - auto: 'auto',
 + '1/2': '50%',
@@ -254,7 +254,7 @@ By default Tailwind only provides `0` and `auto` top/right/bottom/left/inset uti
 
 If you'd like to add any negative top/right/bottom/left classes that take the same form as Tailwind's [negative margin](/docs/margin#negative-margins) classes, prefix the keys in your config file with a dash:
 
-@component('_partials.customized-config', ['key' => 'theme.inset'])
+@component('_partials.customised-config', ['key' => 'theme.inset'])
 + '-16': '-4rem',
 @endcomponent
 

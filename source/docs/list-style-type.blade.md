@@ -32,7 +32,7 @@ To create bulleted or numeric lists, use the `list-disc` and `list-decimal` util
 
 @component('_partials.code-sample')
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.list-disc</p>
+  <p class="text-sm text-grey-600">.list-disc</p>
   <ul class="list-disc list-inside">
     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
     <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
@@ -40,7 +40,7 @@ To create bulleted or numeric lists, use the `list-disc` and `list-decimal` util
   </ul>
 </div>
 <div class="mb-6">
-  <p class="text-sm text-gray-600">.list-decimal</p>
+  <p class="text-sm text-grey-600">.list-decimal</p>
   <ol class="list-decimal list-inside">
     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
     <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
@@ -48,7 +48,7 @@ To create bulleted or numeric lists, use the `list-disc` and `list-decimal` util
   </ol>
 </div>
 <div>
-  <p class="text-sm text-gray-600">.list-none (default)</p>
+  <p class="text-sm text-grey-600">.list-none (default)</p>
   <ul class="default">
     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
     <li>Assumenda, quia temporibus eveniet a libero incidunt suscipit</li>
@@ -129,7 +129,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides three utilities for the most common list style types. You change, add, or remove these by editing the `theme.listStyleType` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.listStyleType'])
+@component('_partials.customised-config', ['key' => 'theme.listStyleType'])
   none: 'none',
 - disc: 'disc',
 - decimal: 'decimal',

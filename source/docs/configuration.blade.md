@@ -1,7 +1,7 @@
 ---
 extends: _layouts.documentation
 title: "Configuration"
-description: "A guide to configuring and customizing your Tailwind installation."
+description: "A guide to configuring and customising your Tailwind installation."
 titleBorder: true
 ---
 
@@ -20,7 +20,7 @@ module.exports = {
       body: ['Graphik', 'sans-serif'],
     },
     extend: {
-      colors: {
+      colours: {
         cyan: '#9cdbff',
       },
       margin: {
@@ -39,7 +39,7 @@ Every section of the config file is optional, so you only have to specify what y
 
 ## Creating your configuration file
 
-Generate a Tailwind config file for your project using the Tailwind CLI utility included when you install the `tailwindcss` npm package:
+Generate a Tailwind config file for your project using the Tailwind CLI utility included when you instal the `tailwindcss` npm package:
 
 ```bash
 npx tailwind init
@@ -77,7 +77,7 @@ module.exports = {
 
 ### Scaffolding the entire default configuration
 
-For most users we encourage you to keep your config file as minimal as possible, and only specify the things you want to customize.
+For most users we encourage you to keep your config file as minimal as possible, and only specify the things you want to customise.
 
 If you'd rather scaffold a complete configuration file that includes all of Tailwind's default configuration, use the `--full` option:
 
@@ -89,7 +89,7 @@ You'll get a file that matches the [default configuration file](https://github.c
 
 ## Theme
 
-The `theme` section is where you define your color palette, font stacks, type scale, border sizes, breakpoints — anything related to the visual design of your site.
+The `theme` section is where you define your colour palette, font stacks, type scale, border sizes, breakpoints — anything related to the visual design of your site.
 
 ```js
 // tailwind.config.js
@@ -112,7 +112,7 @@ module.exports = {
       '4': '4px',
     },
     extend: {
-      colors: {
+      colours: {
         cyan: '#9cdbff',
       },
       spacing: {
@@ -124,7 +124,7 @@ module.exports = {
 }
 ```
 
-Learn more about the default theme and how to customize it in the [theme configuration guide](/docs/theme).
+Learn more about the default theme and how to customise it in the [theme configuration guide](/docs/theme).
 
 ## Variants
 
@@ -179,8 +179,8 @@ Now every utility will be generated with the configured prefix:
 .tw-text-left {
   text-align: left;
 }
-.tw-text-center {
-  text-align: center;
+.tw-text-centre {
+  text-align: centre;
 }
 .tw-text-right {
   text-align: right;
@@ -296,7 +296,7 @@ After your configuration is all set up and your root element matches the selecto
 <!-- ... -->
 <style>
   .high-specificity .nested .selector {
-    color: blue;
+    colour: blue;
   }
 </style>
 <body id="app">
@@ -308,7 +308,7 @@ After your configuration is all set up and your root element matches the selecto
   </div>
 
   <!-- Will be #bada55 -->
-  <div class="text-red-500" style="color: #bada55;"><!-- ... --></div>
+  <div class="text-red-500" style="colour: #bada55;"><!-- ... --></div>
 </body>
 </html>
 ```
@@ -316,7 +316,7 @@ After your configuration is all set up and your root element matches the selecto
 
 ## Separator
 
-The `separator` option lets you customize what character or string should be used to separate variant prefixes (screen sizes, `hover`, `focus`, etc.) from utility names (`text-center`, `items-end`, etc.).
+The `separator` option lets you customise what character or string should be used to separate variant prefixes (screen sizes, `hover`, `focus`, etc.) from utility names (`text-centre`, `items-end`, etc.).
 
 We use a colon by default (`:`), but it can be useful to change this if you're using a templating language like [Pug](https://pugjs.org) that doesn't support special characters in class names.
 
@@ -387,12 +387,12 @@ Here's a list of every core plugin for reference:
 | `alignSelf` | The `align-self` utilities like `self-end` |
 | `appearance` | The `appearance` utilities like `appearance-none` |
 | `backgroundAttachment` | The `background-attachment` utilities like `bg-fixed` |
-| `backgroundColor` | The `background-color` utilities like `bg-gray-200` |
-| `backgroundPosition` | The `background-position` utilities like `bg-center` |
+| `backgroundColor` | The `background-colour` utilities like `bg-grey-200` |
+| `backgroundPosition` | The `background-position` utilities like `bg-centre` |
 | `backgroundRepeat` | The `background-repeat` utilities like `bg-no-repeat` |
 | `backgroundSize` | The `background-size` utilities like `bg-cover` |
 | `borderCollapse` | The `border-collapse` utilities like `border-separate` |
-| `borderColor` | The `border-color` utilities like `border-gray-300` |
+| `borderColor` | The `border-colour` utilities like `border-grey-300` |
 | `borderRadius` | The `border-radius` utilities like `rounded-lg` |
 | `borderStyle` | The `border-style` utilities like `border-dashed` |
 | `borderWidth` | The `border-width` utilities like `border-2` |
@@ -424,7 +424,7 @@ Here's a list of every core plugin for reference:
 | `minHeight` | The `min-height` utilities like `min-h-screen` |
 | `minWidth` | The `min-width` utilities like `min-w-0` |
 | `objectFit` | The `object-fit` utilities like `object-cover` |
-| `objectPosition` | The `object-position` utilities like `object-center` |
+| `objectPosition` | The `object-position` utilities like `object-centre` |
 | `opacity` | The `opacity` utilities like `opacity-50` |
 | `order` | The flexbox `order` utilities like `order-last` |
 | `outline` | The `outline` utilities like `outline-none` |
@@ -435,8 +435,8 @@ Here's a list of every core plugin for reference:
 | `resize` | The `resize` utilities like `resize-y` |
 | `stroke` | The `stroke` utilities like `stroke-current` |
 | `tableLayout` | The `table-layout` utilities like `table-fixed` |
-| `textAlign` | The `text-align` utilities like `text-center` |
-| `textColor` | The `text-color` utilities like `text-red-600` |
+| `textAlign` | The `text-align` utilities like `text-centre` |
+| `textColor` | The `text-colour` utilities like `text-red-600` |
 | `textDecoration` | The `text-decoration` utilities like `underline` |
 | `textTransform` | The `text-transform` utilities like `uppercase` |
 | `userSelect` | The `user-select` utilities like `user-select-none` |

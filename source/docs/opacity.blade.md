@@ -44,7 +44,7 @@ features:
 @component('_partials.code-sample')
 <div class="flex -mx-2">
   @foreach ($page->config['theme']['opacity']->reverse() as $name => $value)
-    <div class="text-sm flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 mx-2 opacity-{{ $name }}">.opacity-{{ $name }}</div>
+    <div class="text-sm flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 mx-2 opacity-{{ $name }}">.opacity-{{ $name }}</div>
   @endforeach
 </div>
 @slot('code')
@@ -62,28 +62,28 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="text-center">
-  <div class="px-4 py-2 bg-gray-400 opacity-100 w-24 h-24 rounded-full inline-block"></div>
+<div class="text-centre">
+  <div class="px-4 py-2 bg-grey-400 opacity-100 w-24 h-24 rounded-full inline-block"></div>
 </div>
 @endslot
 @slot('sm')
-<div class="text-center">
-  <div class="px-4 py-2 bg-gray-400 opacity-75 w-24 h-24 rounded-full inline-block"></div>
+<div class="text-centre">
+  <div class="px-4 py-2 bg-grey-400 opacity-75 w-24 h-24 rounded-full inline-block"></div>
 </div>
 @endslot
 @slot('md')
-<div class="text-center">
-  <div class="px-4 py-2 bg-gray-400 opacity-50 w-24 h-24 rounded-full inline-block"></div>
+<div class="text-centre">
+  <div class="px-4 py-2 bg-grey-400 opacity-50 w-24 h-24 rounded-full inline-block"></div>
 </div>
 @endslot
 @slot('lg')
-<div class="text-center">
-  <div class="px-4 py-2 bg-gray-400 opacity-25 w-24 h-24 rounded-full inline-block"></div>
+<div class="text-centre">
+  <div class="px-4 py-2 bg-grey-400 opacity-25 w-24 h-24 rounded-full inline-block"></div>
 </div>
 @endslot
 @slot('xl')
-<div class="text-center">
-  <div class="px-4 py-2 bg-gray-400 opacity-0 w-24 h-24 rounded-full inline-block"></div>
+<div class="text-centre">
+  <div class="px-4 py-2 bg-grey-400 opacity-0 w-24 h-24 rounded-full inline-block"></div>
 </div>
 @endslot
 @slot('code')
@@ -99,7 +99,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides five opacity utilities based on a simple numeric scale. You change, add, or remove these by editing the `theme.opacity` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.opacity'])
+@component('_partials.customised-config', ['key' => 'theme.opacity'])
   '0': '0',
 - '25': '.25',
 - '50': '.5',

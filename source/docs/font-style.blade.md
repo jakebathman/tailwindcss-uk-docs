@@ -29,7 +29,7 @@ features:
 Use the `.not-italic` utility to display text normally. This is typically used to reset italic text at different breakpoints.
 
 @component('_partials.code-sample')
-<p class="not-italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="not-italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="not-italic ...">The quick brown fox ...</p>
 @endslot
@@ -40,7 +40,7 @@ Use the `.not-italic` utility to display text normally. This is typically used t
 Use the `.italic` utility to make text italic.
 
 @component('_partials.code-sample')
-<p class="italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @slot('code')
 <p class="italic ...">The quick brown fox ...</p>
 @endslot
@@ -54,19 +54,19 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<p class="italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('sm')
-<p class="not-italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="not-italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('md')
-<p class="italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('lg')
-<p class="not-italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="not-italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('xl')
-<p class="italic text-lg text-gray-800">The quick brown fox jumped over the lazy dog.</p>
+<p class="italic text-lg text-grey-800">The quick brown fox jumped over the lazy dog.</p>
 @endslot
 @slot('code')
 <p class="none:italic sm:not-italic md:italic lg:not-italic xl:italic ...">

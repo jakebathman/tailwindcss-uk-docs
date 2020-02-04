@@ -43,7 +43,7 @@ Use `.table-auto` to allow the table to automatically size columns to fit the co
       <td class="border px-4 py-2">Adam</td>
       <td class="border px-4 py-2">858</td>
     </tr>
-    <tr class="bg-gray-100">
+    <tr class="bg-grey-100">
       <td class="border px-4 py-2">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
       <td class="border px-4 py-2">Adam</td>
       <td class="border px-4 py-2">112</td>
@@ -78,7 +78,7 @@ You can manually set the widths for some columns and the rest of the available w
       <td class="border px-4 py-2">Adam</td>
       <td class="border px-4 py-2">858</td>
     </tr>
-    <tr class="bg-gray-100">
+    <tr class="bg-grey-100">
       <td class="border px-4 py-2">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
       <td class="border px-4 py-2">Adam</td>
       <td class="border px-4 py-2">112</td>

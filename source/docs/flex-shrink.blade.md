@@ -29,14 +29,14 @@ features:
 Use `.flex-shrink` to allow a flex item to shrink if needed:
 
 @component('_partials.code-sample')
-<div class="flex bg-gray-200">
-  <div class="flex-none text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-none text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Longer content that cannot flex
   </div>
-  <div class="flex-shrink text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Item that will shrink even if it causes the content to wrap
   </div>
-  <div class="flex-none text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-none text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Longer content that cannot flex
   </div>
 </div>
@@ -47,14 +47,14 @@ Use `.flex-shrink` to allow a flex item to shrink if needed:
 Use `.flex-shrink-0` to prevent a flex item from shrinking:
 
 @component('_partials.code-sample')
-<div class="flex bg-gray-200">
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can shrink if needed
   </div>
-  <div class="flex-shrink-0 text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink-0 text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Item that cannot shrink below its initial size
   </div>
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can shrink if needed
   </div>
 </div>
@@ -68,66 +68,66 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="flex bg-gray-200">
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
-  <div class="flex-shrink text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Responsive flex item
   </div>
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
 </div>
 @endslot
 @slot('sm')
-<div class="flex bg-gray-200">
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
-  <div class="flex-shrink-0 text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink-0 text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Responsive flex item
   </div>
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
 </div>
 @endslot
 @slot('md')
-<div class="flex bg-gray-200">
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
-  <div class="flex-shrink text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Responsive flex item
   </div>
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
 </div>
 @endslot
 @slot('lg')
-<div class="flex bg-gray-200">
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
-  <div class="flex-shrink-0 text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink-0 text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Responsive flex item
   </div>
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
 </div>
 @endslot
 @slot('xl')
-<div class="flex bg-gray-200">
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+<div class="flex bg-grey-200">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
-  <div class="flex-shrink text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-800 text-centre bg-grey-500 px-4 py-2 m-2">
     Responsive flex item
   </div>
-  <div class="flex-shrink text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+  <div class="flex-shrink text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">
     Item that can grow or shrink if needed
   </div>
 </div>
@@ -149,7 +149,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides two `flex-shrink` utilities. You change, add, or remove these by editing the `theme.flexShrink` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.flexShrink'])
+@component('_partials.customised-config', ['key' => 'theme.flexShrink'])
   '0': 0,
 - default: 1,
 + default: 2,

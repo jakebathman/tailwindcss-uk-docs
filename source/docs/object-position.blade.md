@@ -17,9 +17,9 @@ features:
             'Place the image on the bottom edge.',
         ],
         [
-            '.object-center',
-            'object-position: center;',
-            'Place the image in the center.',
+            '.object-centre',
+            'object-position: centre;',
+            'Place the image in the centre.',
         ],
         [
             '.object-left',
@@ -66,56 +66,56 @@ Use the `.object-{side}` utilities to specify how a replaced element's content s
 @component('_partials.code-sample')
 <div class="flex justify-around mb-8">
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-left-top</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-left-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-left-top</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-left-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-top</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-top</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-right-top</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-right-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-right-top</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-right-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
 </div>
 <div class="flex justify-around mb-8">
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-left</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-left object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-left</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-left object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-center</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-center object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-centre</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-centre object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-right</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-right object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-right</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-right object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
 </div>
 <div class="flex justify-around">
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-left-bottom</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-left-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-left-bottom</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-left-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-bottom</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-bottom</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
   <div class="flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.object-right-bottom</p>
-    <img class="mx-auto bg-gray-400 w-24 h-24 object-right-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
+    <p class="text-centre text-sm text-grey-600 mb-1">.object-right-bottom</p>
+    <img class="mx-auto bg-grey-400 w-24 h-24 object-right-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=64&h=64&q=80">
   </div>
 </div>
 @slot('code')
-<img class="object-none object-left-top bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-top bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-right-top bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-left bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-center bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-right bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-left-bottom bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-bottom bg-gray-400 w-24 h-24" src="...">
-<img class="object-none object-right-bottom bg-gray-400 w-24 h-24" src="...">
+<img class="object-none object-left-top bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-top bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-right-top bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-left bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-centre bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-right bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-left-bottom bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-bottom bg-grey-400 w-24 h-24" src="...">
+<img class="object-none object-right-bottom bg-grey-400 w-24 h-24" src="...">
 @endslot
 @endcomponent
 
@@ -127,27 +127,27 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<img class="mx-auto bg-gray-400 w-48 h-48 object-center object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
+<img class="mx-auto bg-grey-400 w-48 h-48 object-centre object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
 @endslot
 
 @slot('sm')
-<img class="mx-auto bg-gray-400 w-48 h-48 object-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
+<img class="mx-auto bg-grey-400 w-48 h-48 object-top object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
 @endslot
 
 @slot('md')
-<img class="mx-auto bg-gray-400 w-48 h-48 object-right object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
+<img class="mx-auto bg-grey-400 w-48 h-48 object-right object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
 @endslot
 
 @slot('lg')
-<img class="mx-auto bg-gray-400 w-48 h-48 object-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
+<img class="mx-auto bg-grey-400 w-48 h-48 object-bottom object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
 @endslot
 
 @slot('xl')
-<img class="mx-auto bg-gray-400 w-48 h-48 object-left object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
+<img class="mx-auto bg-grey-400 w-48 h-48 object-left object-none" src="https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=128&h=128&q=80">
 @endslot
 
 @slot('code')
-<img class="none:object-center sm:object-top md:object-right lg:object-bottom xl:object-left ..." src="...">
+<img class="none:object-centre sm:object-top md:object-right lg:object-bottom xl:object-left ..." src="...">
 @endslot
 @endcomponent
 
@@ -157,9 +157,9 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides nine object position utilities. You can change, add, or remove these by editing the `theme.objectPosition` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.objectPosition'])
+@component('_partials.customised-config', ['key' => 'theme.objectPosition'])
   bottom: 'bottom',
-  center: 'center',
+  centre: 'centre',
   left: 'left',
 - 'left-bottom': 'left bottom',
 - 'left-top': 'left top',
@@ -167,8 +167,8 @@ By default Tailwind provides nine object position utilities. You can change, add
   'right-bottom': 'right bottom',
   'right-top': 'right top',
   top: 'top',
-+ 'center-bottom': 'center bottom'
-+ 'center-top': 'center top',
++ 'centre-bottom': 'centre bottom'
++ 'centre-top': 'centre top',
 @endcomponent
 
 @include('_partials.variants-and-disabling', [

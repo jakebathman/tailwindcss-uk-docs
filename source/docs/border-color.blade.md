@@ -1,7 +1,7 @@
 ---
 extends: _layouts.documentation
 title: "Border Color"
-description: "Utilities for controlling the color of an element's borders."
+description: "Utilities for controlling the colour of an element's borders."
 features:
   responsive: true
   customizable: true
@@ -9,17 +9,17 @@ features:
   focus: false
 ---
 
-@include('_partials.border-color-class-table', [
-  'rows' => $page->config['theme']['colors']->flatMap(function ($colors, $name) {
-    if (is_string($colors)) {
+@include('_partials.border-colour-class-table', [
+  'rows' => $page->config['theme']['colours']->flatMap(function ($colours, $name) {
+    if (is_string($colours)) {
       return [
-        [".border-{$name}", "border-color: {$colors};"]
+        [".border-{$name}", "border-colour: {$colours};"]
       ];
     }
 
-    return collect($colors)->map(function ($value, $key) use ($name) {
+    return collect($colours)->map(function ($value, $key) use ($name) {
       $class = ".border-{$name}-{$key}";
-      $code = "border-color: {$value};";
+      $code = "border-colour: {$value};";
       return [
         $class,
         $code,
@@ -30,11 +30,11 @@ features:
 
 ## Usage
 
-Control the border color of an element using the `.border-{color}` utilities.
+Control the border colour of an element using the `.border-{colour}` utilities.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <div class="max-w-xs w-full mx-auto">
-  <input class="border border-red-500 bg-white text-gray-900 appearance-none block w-full text-gray-900 border rounded py-3 px-4 focus:outline-none" placeholder="Your email">
+  <input class="border border-red-500 bg-white text-grey-900 appearance-none block w-full text-grey-900 border rounded py-3 px-4 focus:outline-none" placeholder="Your email">
 </div>
 @slot('code')
 <input class="border border-red-500 ...">
@@ -43,11 +43,11 @@ Control the border color of an element using the `.border-{color}` utilities.
 
 ## Responsive
 
-To control the border color of an element at a specific breakpoint, add a `{screen}:` prefix to any existing border color utility. For example, use `md:border-green-500` to apply the `border-green-500` utility at only medium screen sizes and above.
+To control the border colour of an element at a specific breakpoint, add a `{screen}:` prefix to any existing border colour utility. For example, use `md:border-green-500` to apply the `border-green-500` utility at only medium screen sizes and above.
 
 For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
 
-@component('_partials.responsive-code-sample', ['class' => 'text-center'])
+@component('_partials.responsive-code-sample', ['class' => 'text-centre'])
 @slot('none')
 <button class="border-2 border-blue-500 bg-transparent text-blue-700 py-2 px-4 font-semibold rounded">
   Button
@@ -69,7 +69,7 @@ For more information about Tailwind's responsive design features, check out the 
 </button>
 @endslot
 @slot('xl')
-<button class="border-2 border-black bg-transparent text-gray-900 py-2 px-4 font-semibold rounded">
+<button class="border-2 border-black bg-transparent text-grey-900 py-2 px-4 font-semibold rounded">
   Button
 </button>
 @endslot
@@ -82,9 +82,9 @@ For more information about Tailwind's responsive design features, check out the 
 
 ## Hover
 
-To control the border color of an element on hover, add the `hover:` prefix to any existing border color utility. For example, use `hover:border-blue-500` to apply the `border-blue-500` utility on hover.
+To control the border colour of an element on hover, add the `hover:` prefix to any existing border colour utility. For example, use `hover:border-blue-500` to apply the `border-blue-500` utility on hover.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <button class="border-2 border-blue-500 hover:border-red-500 bg-transparent text-blue-700 hover:text-red-700 py-2 px-4 font-semibold rounded">
   Button
 </button>
@@ -104,35 +104,35 @@ Hover utilities can also be combined with responsive utilities by adding the res
 
 ## Focus
 
-To control the border color of an element on focus, add the `focus:` prefix to any existing border color utility. For example, use `focus:border-blue-500` to apply the `border-blue-500` utility on focus.
+To control the border colour of an element on focus, add the `focus:` prefix to any existing border colour utility. For example, use `focus:border-blue-500` to apply the `border-blue-500` utility on focus.
 
 @component('_partials.code-sample', ['lang' => 'html'])
 <div class="max-w-xs w-full mx-auto">
-  <input class="border border-gray-400 focus:border-blue-500 bg-white text-gray-900 appearance-none inline-block w-full text-gray-900 border rounded py-3 px-4 focus:outline-none" placeholder="Focus me">
+  <input class="border border-grey-400 focus:border-blue-500 bg-white text-grey-900 appearance-none inline-block w-full text-grey-900 border rounded py-3 px-4 focus:outline-none" placeholder="Focus me">
 </div>
 
 @slot('code')
-<input class="border-gray-400 focus:border-blue-500 ...">
+<input class="border-grey-400 focus:border-blue-500 ...">
 @endslot
 @endcomponent
 
 Focus utilities can also be combined with responsive utilities by adding the responsive `{screen}:` prefix *before* the `focus:` prefix.
 
 ```html
-<input class="... md:border-gray-200 md:focus:border-white ...">
+<input class="... md:border-grey-200 md:focus:border-white ...">
 ```
 
 ## Customizing
 
 ### Border Colors
 
-By default Tailwind makes the entire [default color palette](/docs/customizing-colors#default-color-palette) available as border colors.
+By default Tailwind makes the entire [default colour palette](/docs/customising-colours#default-colour-palette) available as border colours.
 
-You can [customize your color palette](/docs/colors#customizing) by editing the `theme.colors` variable in your `tailwind.config.js` file, or customize just your border colors using the `theme.borderColor` section of your Tailwind config.
+You can [customise your colour palette](/docs/colours#customising) by editing the `theme.colours` variable in your `tailwind.config.js` file, or customise just your border colours using the `theme.borderColor` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.borderColor', 'usesTheme' => true])
-- ...theme('colors'),
-  default: theme('colors.gray.300', 'currentColor'),
+@component('_partials.customised-config', ['key' => 'theme.borderColor', 'usesTheme' => true])
+- ...theme('colours'),
+  default: theme('colours.grey.300', 'currentColor'),
 + 'primary': '#3490dc',
 + 'secondary': '#ffed4a',
 + 'danger': '#e3342f',
@@ -140,7 +140,7 @@ You can [customize your color palette](/docs/colors#customizing) by editing the 
 
 @include('_partials.variants-and-disabling', [
     'utility' => [
-        'name' => 'border color',
+        'name' => 'border colour',
         'property' => 'borderColor',
     ],
     'variants' => [

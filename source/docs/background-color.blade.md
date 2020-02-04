@@ -1,7 +1,7 @@
 ---
 extends: _layouts.documentation
 title: "Background Color"
-description: "Utilities for controlling an element's background color."
+description: "Utilities for controlling an element's background colour."
 features:
   responsive: true
   customizable: true
@@ -9,17 +9,17 @@ features:
   focus: false
 ---
 
-@include('_partials.background-color-class-table', [
-  'rows' => $page->config['theme']['colors']->flatMap(function ($colors, $name) {
-    if (is_string($colors)) {
+@include('_partials.background-colour-class-table', [
+  'rows' => $page->config['theme']['colours']->flatMap(function ($colours, $name) {
+    if (is_string($colours)) {
       return [
-        [".bg-{$name}", "background-color: {$colors};"]
+        [".bg-{$name}", "background-colour: {$colours};"]
       ];
     }
 
-    return collect($colors)->map(function ($value, $key) use ($name) {
+    return collect($colours)->map(function ($value, $key) use ($name) {
       $class = ".bg-{$name}-{$key}";
-      $code = "background-color: {$value};";
+      $code = "background-colour: {$value};";
       return [
         $class,
         $code,
@@ -30,9 +30,9 @@ features:
 
 ## Usage
 
-Control the background color of an element using the `.bg-{color}` utilities.
+Control the background colour of an element using the `.bg-{colour}` utilities.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <button type="button" class="bg-blue-500 text-white font-semibold px-4 py-2 rounded">
   Button
 </button>
@@ -43,11 +43,11 @@ Control the background color of an element using the `.bg-{color}` utilities.
 
 ## Responsive
 
-To control the background color of an element at a specific breakpoint, add a `{screen}:` prefix to any existing background color utility. For example, use `md:bg-green-500` to apply the `bg-green-500` utility at only medium screen sizes and above.
+To control the background colour of an element at a specific breakpoint, add a `{screen}:` prefix to any existing background colour utility. For example, use `md:bg-green-500` to apply the `bg-green-500` utility at only medium screen sizes and above.
 
 For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
 
-@component('_partials.responsive-code-sample', ['class' => 'text-center'])
+@component('_partials.responsive-code-sample', ['class' => 'text-centre'])
 @slot('none')
 <button type="button" class="bg-blue-500 text-white font-semibold px-4 py-2 rounded">
   Button
@@ -80,9 +80,9 @@ For more information about Tailwind's responsive design features, check out the 
 
 ## Hover
 
-To control the background color of an element on hover, add the `hover:` prefix to any existing background color utility. For example, use `hover:bg-blue-500` to apply the `bg-blue-500` utility on hover.
+To control the background colour of an element on hover, add the `hover:` prefix to any existing background colour utility. For example, use `hover:bg-blue-500` to apply the `bg-blue-500` utility on hover.
 
-@component('_partials.code-sample', ['class' => 'text-center'])
+@component('_partials.code-sample', ['class' => 'text-centre'])
 <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded">
   Hover me
 </button>
@@ -102,34 +102,34 @@ Hover utilities can also be combined with responsive utilities by adding the res
 
 ## Focus
 
-To control the background color of an element on focus, add the `focus:` prefix to any existing background color utility. For example, use `focus:bg-blue-500` to apply the `bg-blue-500` utility on focus.
+To control the background colour of an element on focus, add the `focus:` prefix to any existing background colour utility. For example, use `focus:bg-blue-500` to apply the `bg-blue-500` utility on focus.
 
 @component('_partials.code-sample', ['lang' => 'html'])
 <div class="max-w-xs w-full mx-auto">
-  <input class="border border-gray-400 bg-gray-200 focus:bg-white text-gray-900 appearance-none inline-block w-full border rounded py-3 px-4 focus:outline-none" placeholder="Focus me">
+  <input class="border border-grey-400 bg-grey-200 focus:bg-white text-grey-900 appearance-none inline-block w-full border rounded py-3 px-4 focus:outline-none" placeholder="Focus me">
 </div>
 
 @slot('code')
-<input class="bg-gray-200 focus:bg-white ...">
+<input class="bg-grey-200 focus:bg-white ...">
 @endslot
 @endcomponent
 
 Focus utilities can also be combined with responsive utilities by adding the responsive `{screen}:` prefix *before* the `focus:` prefix.
 
 ```html
-<input class="... md:bg-gray-200 md:focus:bg-white ...">
+<input class="... md:bg-grey-200 md:focus:bg-white ...">
 ```
 
 ## Customizing
 
 ### Background Colors
 
-By default Tailwind makes the entire [default color palette](/docs/customizing-colors#default-color-palette) available as background colors.
+By default Tailwind makes the entire [default colour palette](/docs/customising-colours#default-colour-palette) available as background colours.
 
-You can [customize your color palette](/docs/colors#customizing) by editing the `theme.colors` variable in your `tailwind.config.js` file, or customize just your background colors using the `theme.backgroundColor` section of your Tailwind config.
+You can [customise your colour palette](/docs/colours#customising) by editing the `theme.colours` variable in your `tailwind.config.js` file, or customise just your background colours using the `theme.backgroundColor` section of your Tailwind config.
 
-@component('_partials.customized-config', ['key' => 'theme.backgroundColor', 'usesTheme' => true])
-- ...theme('colors'),
+@component('_partials.customised-config', ['key' => 'theme.backgroundColor', 'usesTheme' => true])
+- ...theme('colours'),
 + 'primary': '#3490dc',
 + 'secondary': '#ffed4a',
 + 'danger': '#e3342f',
@@ -137,7 +137,7 @@ You can [customize your color palette](/docs/colors#customizing) by editing the 
 
 @include('_partials.variants-and-disabling', [
     'utility' => [
-        'name' => 'background color',
+        'name' => 'background colour',
         'property' => 'backgroundColor',
     ],
     'variants' => [

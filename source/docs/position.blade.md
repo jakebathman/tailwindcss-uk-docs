@@ -24,7 +24,7 @@ features:
     [
       '.absolute',
       "position: absolute;",
-      "Position an element outside of the normal flow of the document, causing neighboring elements to act as if the element doesn't exist.",
+      "Position an element outside of the normal flow of the document, causing neighbouring elements to act as if the element doesn't exist.",
     ],
     [
       '.relative',
@@ -46,19 +46,19 @@ Use `.static` to position an element according to the normal flow of the documen
 Any offsets will be ignored and the element will not act as a position reference for absolutely positioned children.
 
 @component('_partials.code-sample')
-<div class="relative bg-gray-400 p-4">
-  <div class="static h-32 bg-gray-600 p-4 text-gray-900">
+<div class="relative bg-grey-400 p-4">
+  <div class="static h-32 bg-grey-600 p-4 text-grey-900">
     <p>Static parent</p>
-    <div class="absolute bottom-0 left-0 bg-gray-800 p-4 text-gray-400">
+    <div class="absolute bottom-0 left-0 bg-grey-800 p-4 text-grey-400">
       <p>Absolute child</p>
     </div>
   </div>
 </div>
 
 @slot('code')
-<div class="static bg-gray-600">
+<div class="static bg-grey-600">
   Static parent
-  <div class="absolute bottom-0 left-0 bg-gray-800">
+  <div class="absolute bottom-0 left-0 bg-grey-800">
     Absolute child
   </div>
 </div>
@@ -72,19 +72,19 @@ Use `.relative` to position an element according to the normal flow of the docum
 Offsets are calculated relative to the element's normal position and the element *will* act as a position reference for absolutely positioned children.
 
 @component('_partials.code-sample')
-<div class="relative bg-gray-400 p-4">
-  <div class="relative h-32 bg-gray-600 p-4 text-gray-900">
+<div class="relative bg-grey-400 p-4">
+  <div class="relative h-32 bg-grey-600 p-4 text-grey-900">
     <p>Relative parent</p>
-    <div class="absolute bottom-0 left-0 bg-gray-800 p-4 text-gray-400">
+    <div class="absolute bottom-0 left-0 bg-grey-800 p-4 text-grey-400">
       <p>Absolute child</p>
     </div>
   </div>
 </div>
 
 @slot('code')
-<div class="relative bg-gray-600">
+<div class="relative bg-grey-600">
   Relative parent
-  <div class="absolute bottom-0 left-0 bg-gray-800">
+  <div class="absolute bottom-0 left-0 bg-grey-800">
     Absolute child
   </div>
 </div>
@@ -93,49 +93,49 @@ Offsets are calculated relative to the element's normal position and the element
 
 ## Absolute
 
-Use `.absolute` to position an element *outside* of the normal flow of the document, causing neighboring elements to act as if the element doesn't exist.
+Use `.absolute` to position an element *outside* of the normal flow of the document, causing neighbouring elements to act as if the element doesn't exist.
 
 Offsets are calculated relative to the nearest parent that has a position other than `static`, and the element *will* act as a position reference for other absolutely positioned children.
 
 @component('_partials.code-sample')
 
-<p class="text-sm text-gray-600 mb-1">With static positioning</p>
-<div class="relative bg-gray-400 px-4 pt-2 pb-4 mb-6">
-  <p class="mb-2 text-gray-700">Relative parent</p>
-  <div class="static bg-gray-500 p-4 text-gray-700">
+<p class="text-sm text-grey-600 mb-1">With static positioning</p>
+<div class="relative bg-grey-400 px-4 pt-2 pb-4 mb-6">
+  <p class="mb-2 text-grey-700">Relative parent</p>
+  <div class="static bg-grey-500 p-4 text-grey-700">
     <p class="mb-2">Static parent</p>
-    <div class="static bottom-0 left-0 bg-gray-800 p-4 text-gray-400 inline-block">
+    <div class="static bottom-0 left-0 bg-grey-800 p-4 text-grey-400 inline-block">
       <p>Static child</p>
     </div>
-    <div class="bg-gray-400 p-4 text-gray-700 inline-block">
+    <div class="bg-grey-400 p-4 text-grey-700 inline-block">
       <p>Static sibling</p>
     </div>
   </div>
 </div>
 
-<p class="text-sm text-gray-600 mb-1">With absolute positioning</p>
-<div class="relative bg-gray-400 px-4 pt-2 pb-4">
-  <p class="mb-2 text-gray-700">Relative parent</p>
-  <div class="static bg-gray-500 p-4 text-gray-700">
+<p class="text-sm text-grey-600 mb-1">With absolute positioning</p>
+<div class="relative bg-grey-400 px-4 pt-2 pb-4">
+  <p class="mb-2 text-grey-700">Relative parent</p>
+  <div class="static bg-grey-500 p-4 text-grey-700">
     <p class="mb-2">Static parent</p>
-    <div class="absolute top-0 right-0 bg-gray-800 p-4 text-gray-400 inline-block">
+    <div class="absolute top-0 right-0 bg-grey-800 p-4 text-grey-400 inline-block">
       <p>Absolute child</p>
     </div>
-    <div class="bg-gray-400 p-4  text-gray-700 inline-block">
+    <div class="bg-grey-400 p-4  text-grey-700 inline-block">
       <p>Static sibling</p>
     </div>
   </div>
 </div>
 
 @slot('code')
-<div class="relative bg-gray-400">
+<div class="relative bg-grey-400">
   Relative parent
-  <div class="static bg-gray-600">
+  <div class="static bg-grey-600">
     Static parent
-    <div class="absolute top-0 right-0 bg-gray-800">
+    <div class="absolute top-0 right-0 bg-grey-800">
       Absolute child
     </div>
-    <div class="bg-gray-400 inline-block">
+    <div class="bg-grey-400 inline-block">
       Static sibling
     </div>
   </div>
@@ -151,21 +151,21 @@ Offsets are calculated relative to the viewport and the element *will* act as a 
 
 @component('_partials.code-sample')
 <div class="rounded-b overflow-hidden max-w-md mx-auto mt-4 mb-4">
-  <div class="rounded-t border-t border-l border-r border-gray-400 bg-gray-200 flex px-4 py-3">
+  <div class="rounded-t border-t border-l border-r border-grey-400 bg-grey-200 flex px-4 py-3">
     <div class="mr-6">
-      <span class="inline-block rounded-full bg-gray-500 h-3 w-3 mr-1"></span>
-      <span class="inline-block rounded-full bg-gray-500 h-3 w-3 mr-1"></span>
-      <span class="inline-block rounded-full bg-gray-500 h-3 w-3"></span>
+      <span class="inline-block rounded-full bg-grey-500 h-3 w-3 mr-1"></span>
+      <span class="inline-block rounded-full bg-grey-500 h-3 w-3 mr-1"></span>
+      <span class="inline-block rounded-full bg-grey-500 h-3 w-3"></span>
     </div>
-    <div class="flex-1 bg-white border border-gray-400 rounded mr-4"></div>
+    <div class="flex-1 bg-white border border-grey-400 rounded mr-4"></div>
   </div>
-  <div class="relative bg-gray-400 h-64">
+  <div class="relative bg-grey-400 h-64">
 
     <!-- Hey fellow nerd! Yes, we're using position absolute instead of position fixed in the demo; it's the best way we could come up with to demonstrate how position fixed works without totally jacking up the layout of the entire documentation site. Forgive us! 😄 -->
 
-    <div class="absolute left-0 right-0 top-0 bg-gray-800 text-gray-400 z-10 px-4 py-3">
+    <div class="absolute left-0 right-0 top-0 bg-grey-800 text-grey-400 z-10 px-4 py-3">
       Fixed child
-      <div class="absolute top-0 bottom-0 right-0 px-4 py-3 bg-gray-500 text-gray-800">
+      <div class="absolute top-0 bottom-0 right-0 px-4 py-3 bg-grey-500 text-grey-800">
         Absolute child
       </div>
     </div>
@@ -184,10 +184,10 @@ Offsets are calculated relative to the viewport and the element *will* act as a 
 </div>
 
 @slot('code')
-<div class="bg-gray-400 pt-16">
-  <div class="fixed bg-gray-600">
+<div class="bg-grey-400 pt-16">
+  <div class="fixed bg-grey-600">
     Fixed child
-    <div class="absolute top-0 right-0 bg-gray-800">
+    <div class="absolute top-0 right-0 bg-grey-800">
       Absolute child
     </div>
   </div>
@@ -202,7 +202,7 @@ Offsets are calculated relative to the viewport and the element *will* act as a 
 ## Sticky
 
 <div class="text-sm bg-blue-100 text-blue-700 font-semi-bold px-4 py-2 mb-4 rounded">
-  <div class="flex items-center">
+  <div class="flex items-centre">
     <div class="mr-2">
       <svg class="block text-blue-400 h-5 w-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.432 15C14.387 9.893 12 8.547 12 6V3h.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H8v3c0 2.547-2.387 3.893-4.432 9-.651 1.625-2.323 4 6.432 4s7.083-2.375 6.432-4zm-1.617 1.751c-.702.21-2.099.449-4.815.449s-4.113-.239-4.815-.449c-.249-.074-.346-.363-.258-.628.22-.67.635-1.828 1.411-3.121 1.896-3.159 3.863.497 5.5.497s1.188-1.561 1.824-.497a15.353 15.353 0 0 1 1.411 3.121c.088.265-.009.553-.258.628z"/></svg>
     </div>
@@ -245,37 +245,37 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="relative inset-x-0 bottom-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="relative inset-x-0 bottom-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('sm')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute inset-x-0 bottom-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute inset-x-0 bottom-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('md')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="fixed inset-x-0 bottom-0 z-100 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="fixed inset-x-0 bottom-0 z-100 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('lg')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="absolute inset-x-0 bottom-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="absolute inset-x-0 bottom-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('xl')
-<div class="relative h-32 bg-gray-400 p-4">
-  <div class="relative inset-x-0 bottom-0 bg-gray-800 p-4 text-gray-500">Responsive element</div>
+<div class="relative h-32 bg-grey-400 p-4">
+  <div class="relative inset-x-0 bottom-0 bg-grey-800 p-4 text-grey-500">Responsive element</div>
 </div>
 @endslot
 
 @slot('code')
-<div class="relative h-32 bg-gray-400 p-4">
+<div class="relative h-32 bg-grey-400 p-4">
   <div class="inset-x-0 bottom-0 none:relative sm:absolute md:fixed lg:absolute xl:relative"></div>
 </div>
 @endslot

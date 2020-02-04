@@ -83,7 +83,7 @@ Any rules inlined with `@@apply` will have `!important` **removed** by default t
 ```css
 /* Input */
 .foo {
-  color: blue !important;
+  colour: blue !important;
 }
 
 .bar {
@@ -92,11 +92,11 @@ Any rules inlined with `@@apply` will have `!important` **removed** by default t
 
 /* Output */
 .foo {
-  color: blue !important;
+  colour: blue !important;
 }
 
 .bar {
-  color: blue;
+  colour: blue;
 }
 ```
 
@@ -214,19 +214,19 @@ So if you want focus utilities to take priority over hover utilities for example
 /* Input */
 @@variants hover, focus {
   .banana {
-    color: yellow;
+    colour: yellow;
   }
 }
 
 /* Output */
 .banana {
-  color: yellow;
+  colour: yellow;
 }
 .hover\:banana:hover {
-  color: yellow;
+  colour: yellow;
 }
 .focus\:banana:focus {
-  color: yellow;
+  colour: yellow;
 }
 ```
 
@@ -333,24 +333,24 @@ This can be a useful alternative to `@@apply` when you want to reference a value
 }
 ```
 
-Since Tailwind uses the [nested object syntax](/docs/colors#nested-object-syntax) to define its default color palette, make sure to use dot notation to access the nested colors.
+Since Tailwind uses the [nested object syntax](/docs/colours#nested-object-syntax) to define its default colour palette, make sure to use dot notation to access the nested colours.
 
 @component('_partials.tip-bad')
-Don't use the dash syntax when accessing nested color values
+Don't use the dash syntax when accessing nested colour values
 @endcomponent
 
 ```css
 .btn-blue {
-  background-color: theme('colors.blue-500');
+  background-colour: theme('colours.blue-500');
 }
 ```
 
 @component('_partials.tip-good')
-Use dot notation to access nested color values
+Use dot notation to access nested colour values
 @endcomponent
 
 ```css
 .btn-blue {
-  background-color: theme('colors.blue.500');
+  background-colour: theme('colours.blue.500');
 }
 ```

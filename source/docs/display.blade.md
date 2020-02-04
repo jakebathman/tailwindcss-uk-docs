@@ -59,10 +59,10 @@ description: "Utilities for controlling the display box type of an element."
 Use `.block` to create a block-level element.
 
 @component('_partials.code-sample')
-<div class="bg-gray-200 p-4">
-  <span class="block text-gray-700 text-center bg-gray-400 px-4 py-2">1</span>
-  <span class="block text-gray-700 text-center bg-gray-400 px-4 py-2 mt-2">2</span>
-  <span class="block text-gray-700 text-center bg-gray-400 px-4 py-2 mt-2">3</span>
+<div class="bg-grey-200 p-4">
+  <span class="block text-grey-700 text-centre bg-grey-400 px-4 py-2">1</span>
+  <span class="block text-grey-700 text-centre bg-grey-400 px-4 py-2 mt-2">2</span>
+  <span class="block text-grey-700 text-centre bg-grey-400 px-4 py-2 mt-2">3</span>
 </div>
 @endcomponent
 
@@ -71,10 +71,10 @@ Use `.block` to create a block-level element.
 Use `.inline-block` to create an inline block-level element.
 
 @component('_partials.code-sample')
-<div class="bg-gray-200">
-  <div class="inline-block text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="inline-block text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="inline-block text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="bg-grey-200">
+  <div class="inline-block text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="inline-block text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="inline-block text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -83,10 +83,10 @@ Use `.inline-block` to create an inline block-level element.
 Use `.inline` to create an inline element.
 
 @component('_partials.code-sample')
-<div class="bg-gray-200">
-  <div class="inline text-gray-700 text-center bg-gray-400 px-4 py-2">1</div>
-  <div class="inline text-gray-700 text-center bg-gray-400 px-4 py-2">2</div>
-  <div class="inline text-gray-700 text-center bg-gray-400 px-4 py-2">3</div>
+<div class="bg-grey-200">
+  <div class="inline text-grey-700 text-centre bg-grey-400 px-4 py-2">1</div>
+  <div class="inline text-grey-700 text-centre bg-grey-400 px-4 py-2">2</div>
+  <div class="inline text-grey-700 text-centre bg-grey-400 px-4 py-2">3</div>
 </div>
 @endcomponent
 
@@ -95,10 +95,10 @@ Use `.inline` to create an inline element.
 Use `.flex` to create a block-level flex container.
 
 @component('_partials.code-sample')
-<div class="flex bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -107,10 +107,10 @@ Use `.flex` to create a block-level flex container.
 Use `.inline-flex` to create an inline flex container.
 
 @component('_partials.code-sample')
-<div class="inline-flex bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="inline-flex bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -121,14 +121,14 @@ Use the `.table`, `.table-row`, and `.table-cell` to create elements that behave
 @component('_partials.code-sample')
 <div class="table w-full">
   <div class="table-row">
-    <div class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-sm">A cell with more content</div>
-    <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">Cell 2</div>
-    <div class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-sm">Cell 3</div>
+    <div class="table-cell bg-grey-400 text-grey-700 px-4 py-2 text-sm">A cell with more content</div>
+    <div class="table-cell bg-grey-200 text-grey-700 px-4 py-2 text-sm">Cell 2</div>
+    <div class="table-cell bg-grey-400 text-grey-700 px-4 py-2 text-sm">Cell 3</div>
   </div>
   <div class="table-row">
-    <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">Cell 4</div>
-    <div class="table-cell bg-gray-400 text-gray-700 px-4 py-2 text-sm">A cell with more content</div>
-    <div class="table-cell bg-gray-200 text-gray-700 px-4 py-2 text-sm">Cell 6</div>
+    <div class="table-cell bg-grey-200 text-grey-700 px-4 py-2 text-sm">Cell 4</div>
+    <div class="table-cell bg-grey-400 text-grey-700 px-4 py-2 text-sm">A cell with more content</div>
+    <div class="table-cell bg-grey-200 text-grey-700 px-4 py-2 text-sm">Cell 6</div>
   </div>
 </div>
 @endcomponent
@@ -138,10 +138,10 @@ Use the `.table`, `.table-row`, and `.table-cell` to create elements that behave
 Use `.hidden` to set an element to `display: none` and remove it from the page layout (compare with `.invisible` from the [visibility](/docs/visibility#invisible) documentation).
 
 @component('_partials.code-sample')
-<div class="flex bg-gray-200">
-  <div class="hidden text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex bg-grey-200">
+  <div class="hidden text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endcomponent
 
@@ -153,38 +153,38 @@ For more information about Tailwind's responsive design features, check out the 
 
 @component('_partials.responsive-code-sample')
 @slot('none')
-<div class="flex bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('sm')
-<div class="inline-flex bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="inline-flex bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('md')
-<div class="block bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="block bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('lg')
-<div class="hidden bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="hidden bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('xl')
-<div class="flex bg-gray-200">
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">1</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">2</div>
-  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">3</div>
+<div class="flex bg-grey-200">
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">1</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">2</div>
+  <div class="flex-1 text-grey-700 text-centre bg-grey-400 px-4 py-2 m-2">3</div>
 </div>
 @endslot
 @slot('code')

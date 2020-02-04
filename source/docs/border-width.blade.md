@@ -121,32 +121,32 @@ Use the `.border`, `.border-0`, `.border-2`, `.border-4`, or `.border-8` utiliti
 @component('_partials.code-sample')
 <div class="flex">
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-0</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-0 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-0</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-0 border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-2</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-2 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-2</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-2 border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-4</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-4 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-4</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-4 border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-8</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-8 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-8</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-8 border-grey-600"></div>
   </div>
 </div>
 @slot('code')
-<div class="border-0 border-gray-600 ..."></div>
-<div class="border border-gray-600 ..."></div>
-<div class="border-2 border-gray-600 ..."></div>
-<div class="border-4 border-gray-600 ..."></div>
-<div class="border-8 border-gray-600 ..."></div>
+<div class="border-0 border-grey-600 ..."></div>
+<div class="border border-grey-600 ..."></div>
+<div class="border-2 border-grey-600 ..."></div>
+<div class="border-4 border-grey-600 ..."></div>
+<div class="border-8 border-grey-600 ..."></div>
 @endslot
 @endcomponent
 
@@ -157,27 +157,27 @@ Use the `.border-{side}`, `.border-{side}-0`, `.border-{side}-2`, `.border-{side
 @component('_partials.code-sample')
 <div class="flex">
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-t-2</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-t-2 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-t-2</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-t-2 border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-r-2</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-r-2 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-r-2</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-r-2 border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-b-2</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-b-2 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-b-2</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-b-2 border-grey-600"></div>
   </div>
   <div class="w-1/2 sm:flex-1">
-    <p class="text-center text-sm text-gray-600 mb-1">.border-l-2</p>
-    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gray-400 border-l-2 border-gray-600"></div>
+    <p class="text-centre text-sm text-grey-600 mb-1">.border-l-2</p>
+    <div class="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-grey-400 border-l-2 border-grey-600"></div>
   </div>
 </div>
 @slot('code')
-<div class="border-t-2 border-gray-600 ..."></div>
-<div class="border-r-2 border-gray-600 ..."></div>
-<div class="border-b-2 border-gray-600 ..."></div>
-<div class="border-l-2 border-gray-600 ..."></div>
+<div class="border-t-2 border-grey-600 ..."></div>
+<div class="border-r-2 border-grey-600 ..."></div>
+<div class="border-b-2 border-grey-600 ..."></div>
+<div class="border-l-2 border-grey-600 ..."></div>
 @endslot
 @endcomponent
 
@@ -187,21 +187,21 @@ To control the border width of an element at a specific breakpoint, add a `{scre
 
 For more information about Tailwind's responsive design features, check out the [Responsive Design](/docs/responsive-design) documentation.
 
-@component('_partials.responsive-code-sample', ['class' => 'text-center'])
+@component('_partials.responsive-code-sample', ['class' => 'text-centre'])
 @slot('none')
-<div class="w-24 h-24 mx-auto border-2 border-gray-600 bg-gray-400"></div>
+<div class="w-24 h-24 mx-auto border-2 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('sm')
-<div class="w-24 h-24 mx-auto border-2 border-t-8 border-gray-600 bg-gray-400"></div>
+<div class="w-24 h-24 mx-auto border-2 border-t-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('md')
-<div class="w-24 h-24 mx-auto border-2 border-t-8 border-r-8 border-gray-600 bg-gray-400"></div>
+<div class="w-24 h-24 mx-auto border-2 border-t-8 border-r-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('lg')
-<div class="w-24 h-24 mx-auto border-2 border-t-8 border-r-8 border-b-8 border-gray-600 bg-gray-400"></div>
+<div class="w-24 h-24 mx-auto border-2 border-t-8 border-r-8 border-b-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('xl')
-<div class="w-24 h-24 mx-auto border-8 border-gray-600 bg-gray-400"></div>
+<div class="w-24 h-24 mx-auto border-8 border-grey-600 bg-grey-400"></div>
 @endslot
 @slot('code')
 <div class="none:border-2 sm:border-t-8 md:border-r-8 lg:border-b-8 xl:border-8">
@@ -215,7 +215,7 @@ For more information about Tailwind's responsive design features, check out the 
 
 By default Tailwind provides five `border-width` utilities, and the same number of utilities per side (top, right, bottom, and left). You change, add, or remove these by editing the `theme.borderWidth` section of your Tailwind config. The values in this section will also control which utilities will be generated side.
 
-@component('_partials.customized-config', ['key' => 'theme.borderWidth'])
+@component('_partials.customised-config', ['key' => 'theme.borderWidth'])
   default: '1px',
   '0': '0',
   '2': '2px',
